@@ -1,11 +1,23 @@
-@import 'tailwindcss';
+@import "tailwindcss/theme.css";
+@import "tailwindcss/utilities.css";
+@config "../../tailwind.config.js";
 
-@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
-@source '../../storage/framework/views/*.php';
-@source '../**/*.blade.php';
-@source '../**/*.js';
+@font-face {
+  font-family: "Source Sans Pro";
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src:
+    url("../../public/fonts/SourceSansPro-Regular.woff2") format("woff2"),
+    url("../../public/fonts/SourceSansPro-Regular.woff") format("woff");
+}
 
-@theme {
-    --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
-        'Segoe UI Symbol', 'Noto Color Emoji';
+@font-face {
+  font-family: "Source Sans Pro";
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+  src:
+    url("../../public/fonts/SourceSansPro-Light.woff2") format("woff2"),
+    url("../../public/fonts/SourceSansPro-Light.woff") format("woff");
 }
