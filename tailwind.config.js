@@ -11,6 +11,7 @@ module.exports = {
     extend: {
       fontFamily: {
         sans: ['"Source Sans Pro"', 'sans-serif'],
+        montserrat: ['Montserrat', 'serif'],
       },
       colors: {
         khaki: '#d0bd96',

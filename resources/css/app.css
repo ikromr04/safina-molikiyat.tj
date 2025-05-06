@@ -21,3 +21,94 @@
     url("../../public/fonts/SourceSansPro-Light.woff2") format("woff2"),
     url("../../public/fonts/SourceSansPro-Light.woff") format("woff");
 }
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  font-family: inherit;
+}
+
+.container {
+  @apply w-[calc(100vw-24px)] mx-auto !max-w-[1376px] md:w-[calc(100vw-48px)] xl:w-[calc(100vw-80px)] 2xl:w-[calc(100vw-160px)];
+}
+
+.lang {
+  @apply relative w-12 h-7 xl:w-[60px] xl:h-9;
+}
+
+.lang__button {
+  @apply relative z-10 flex justify-center items-center gap-1 bg-transparent text-platinum border-none p-0 rounded-[3px] w-12 h-7 cursor-pointer duration-150 hover:bg-khaki/20 active:bg-khaki/20 font-light xl:text-xl xl:w-[60px] xl:h-9;
+
+  .lang--shown>& {
+    @apply bg-khaki/20;
+  }
+}
+
+.lang__icon {
+  @apply duration-150;
+
+  .lang--shown & {
+    @apply scale-y-[-1];
+  }
+}
+
+.lang__list {
+  @apply hidden list-none p-0 m-0 duration-150;
+
+  .lang--shown & {
+    @apply absolute left-[-2px] top-[-2px] flex flex-col p-[2px] pt-[32px] gap-[2px] w-[calc(100%+4px)] rounded bg-khaki/10 backdrop-blur-xs;
+  }
+}
+
+.email {
+  @apply relative z-0 flex w-max h-max text-inherit duration-150 p-[10px] hover:text-khaki;
+}
+
+.email__dot {
+  animation-name: twinkle;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  @apply absolute right-[10px] flex w-[6px] h-[6px] bg-khaki rounded-full translate-x-[40%];
+}
+
+.pattern {
+  animation-name: pattern;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+}
+
+.email:hover .email__dot {
+  @apply bg-platinum;
+}
+
+@keyframes twinkle {
+  0% {
+    transform: translate(0, -40%)
+  }
+
+  50% {
+    transform: translate(0, -200%)
+  }
+
+  90% {
+    transform: translate(0, -40%)
+  }
+
+  100% {
+    transform: translate(0, -40%)
+  }
+}
+
+@keyframes pattern {
+  0% {
+    height: 160%;
+  }
+
+  100% {
+    height: 100%;
+  }
+}
