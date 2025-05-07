@@ -15,8 +15,12 @@
     "file": "assets/SourceSansPro-Regular-DttFCsV7.woff2",
     "src": "public/fonts/SourceSansPro-Regular.woff2"
   },
+  "public/images/trapezoid-outlined.svg": {
+    "file": "assets/trapezoid-outlined-BVygLTb2.svg",
+    "src": "public/images/trapezoid-outlined.svg"
+  },
   "resources/css/app.css": {
-    "file": "assets/app-B_jpvDnX.css",
+    "file": "assets/app-_OPLxtJ4.css",
     "src": "resources/css/app.css",
     "isEntry": true
   },

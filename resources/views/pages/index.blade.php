@@ -1,10 +1,10 @@
 @extends('layouts.app')
 
 @section('content')
-  <main class="flex flex-col">
+  <main class="flex flex-col text-khaki">
     <h1 class="sr-only">Safina Molikiyat</h1>
 
-    <div class="flex flex-col h-[calc(100vh-281px)] md:h-auto">
+    <div class="flex flex-col min-h-[calc(100vh-230px)] md:h-auto">
       <div class="relative container z-10 flex mt-auto min-h-40 aspect-[320/240] overflow-hidden md:aspect-[1440/652]">
         <div
           class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 h-full w-auto aspect-[1440/652]"
@@ -30,6 +30,6 @@
       </div>
     </div>
 
-    <div class="h-screen"></div>
+    <x-blocks.statistics />
   </main>
 @endsection
