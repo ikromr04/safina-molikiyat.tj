@@ -26,3 +26,28 @@ lottie.loadAnimation({
   loop: false,
   path: '/lotties/logo.json'
 });
+
+const servicesList = document.querySelector('[data-list="services"]');
+const servicesItems = servicesList.querySelectorAll('li');
+
+servicesList?.addEventListener('click', (evt) => {
+  if (window.innerWidth < 768) {
+    if (evt.currentTarget.classList.contains('collapsed')) {
+      evt.currentTarget.classList.remove('collapsed');
+
+      servicesItems?.forEach((child, index) => {
+        if (index !== 0) {
+          child.style.marginTop = `-${child.offsetHeight + 4}px`;
+        }
+      });
+    } else {
+      evt.currentTarget.classList.add('collapsed');
+
+      servicesItems?.forEach((child, index) => {
+        if (index !== 0) {
+          child.style.marginTop = 0;
+        }
+      });
+    }
+  }
+});

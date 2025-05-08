@@ -31,5 +31,7 @@
     </div>
 
     <x-blocks.statistics />
+
+    <x-blocks.services />
   </main>
 @endsection
