@@ -1,23 +1,20 @@
 <section class="container">
-  <h2 class="mx-2 mt-0 text-[18px] font-normal uppercase mb-8 sm:flex sm:flex-col md:text-2xl md:mb-0 xl:mx-3 xl:text-[34px] 2xl:text-[40px]">
+  <h2 class="title mt-0 mb-9 md:mb-0">
     Новое качество услуг
-    <small class="leading-[1.2] text-[18px] md:text-2xl xl:text-[34px] 2xl:text-[40px] font-light">на рынке <br class="sm:hidden"> недвижимости</small>
+    <small class="sm:block">на рынке <br class="sm:hidden"> недвижимости</small>
   </h2>
 
-  <ul
-    class="relative z-0 flex flex-col gap-y-3 p-0 -mx-3 m-0 list-none group collapsed md:mx-0 md:grid md:grid-cols-2 md:gap-[1px]"
-    data-list="services"
-  >
+  <ul class="relative z-0 flex flex-col gap-y-3 p-0 -mx-3 m-0 list-none group collapsed md:mx-0 md:grid md:grid-cols-2 md:gap-[1px]" data-list="services">
     <li class="relative z-40 flex items-start px-[6%] pt-1 pb-3 min-h-12 md:p-0 md:justify-end md:z-0">
       <div class="flex items-center gap-x-3 md:absolute md:right-20 md:bottom-[53px] md:flex-row-reverse md:text-right md:gap-6 md:items-end">
         <svg class="min-w-[30px] md:min-w-9 md:min-h-9" width="30" height="30">
           <use xlink:href="#service_1" />
         </svg>
         <div>
-          <h3 class="mt-0 mb-1 text-sm font-normal leading-[1.2] md:text-[16px] md:mb-2">
+          <h3 class="mt-0 mb-1 text-[clamp(14px,3.7vw,16px)] font-normal leading-[1.2] md:text-[clamp(16px,2.08vw,18px)] md:mb-2">
             Юридическая поддержка
           </h3>
-          <p class="leading-none my-0 text-xs font-light md:max-w-40 md:ml-auto md:text-sm">
+          <p class="leading-none my-0 text-[clamp(12px,3.6vw,14px)] font-light md:max-w-[180px] md:ml-auto md:text-[clamp(14px,1.82vw,16px)]">
             Обеспечение соблюдения норм и защиты
           </p>
         </div>
@@ -47,10 +44,10 @@
           <use xlink:href="#service_2" />
         </svg>
         <div>
-          <h3 class="mt-0 mb-1 text-sm font-normal leading-[1.2] md:text-[16px] md:mb-2">
+          <h3 class="mt-0 mb-1 text-text-[clamp(14px,3.7vw,16px)] font-normal leading-[1.2] md:text-[16px] md:mb-2">
             Современные решения
           </h3>
-          <p class="leading-none my-0 text-xs font-light md:max-w-[240px] md:ml-auto md:text-sm">
+          <p class="leading-none my-0 text-text-[clamp(12px,3.6vw,14px)] font-light md:max-w-[240px] md:ml-auto md:text-sm">
             Использование передовых технологий для оптимальной работы
           </p>
         </div>
@@ -80,10 +77,10 @@
           <use xlink:href="#service_3" />
         </svg>
         <div>
-          <h3 class="mt-0 mb-1 text-sm font-normal leading-[1.2] md:text-[16px] md:mb-2">
+          <h3 class="mt-0 mb-1 text-text-[clamp(14px,3.7vw,16px)] font-normal leading-[1.2] md:text-[16px] md:mb-2">
             Международная команда
           </h3>
-          <p class="leading-none my-0 text-xs font-light md:max-w-[240px] md:ml-auto md:text-sm">
+          <p class="leading-none my-0 text-text-[clamp(12px,3.6vw,14px)] font-light md:max-w-[240px] md:ml-auto md:text-sm">
             Разнообразные эксперты, работающие над глобальными стратегиями
           </p>
         </div>
@@ -113,10 +110,10 @@
           <use xlink:href="#service_4" />
         </svg>
         <div>
-          <h3 class="mt-0 mb-1 text-sm font-normal leading-[1.2] md:text-[16px] md:mb-2">
+          <h3 class="mt-0 mb-1 text-text-[clamp(14px,3.7vw,16px)] font-normal leading-[1.2] md:text-[16px] md:mb-2">
             Сокращение затрат
           </h3>
-          <p class="leading-none my-0 text-xs font-light md:max-w-[166px] md:ml-auto md:text-sm">
+          <p class="leading-none my-0 text-text-[clamp(12px,3.6vw,14px)] font-light md:max-w-[166px] md:ml-auto md:text-sm">
             Снижение расходов за счет эффективного управления
           </p>
         </div>
@@ -146,10 +143,10 @@
           <use xlink:href="#service_5" />
         </svg>
         <div>
-          <h3 class="mt-0 mb-1 text-sm font-normal leading-[1.2] md:text-[16px] md:mb-2">
+          <h3 class="mt-0 mb-1 text-text-[clamp(14px,3.7vw,16px)] font-normal leading-[1.2] md:text-[16px] md:mb-2">
             Отношения со стейкхолдерами
           </h3>
-          <p class="leading-none my-0 text-xs font-light md:ml-auto md:text-sm">
+          <p class="leading-none my-0 text-text-[clamp(12px,3.6vw,14px)] font-light md:ml-auto md:text-sm">
             Создание крепких связей для взаимной выгоды
           </p>
         </div>

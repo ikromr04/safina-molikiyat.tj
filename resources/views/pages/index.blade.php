@@ -14,7 +14,7 @@
 
       <div class="relative flex justify-center pt-14 pb-16 mb-auto md:p-0 md:h-[370px] md:items-center md:-mt-24 md:-mb-11">
         <button
-          class="relative z-10 flex items-center uppercase border-none h-7 px-2 rounded-[5px] duration-150 text-xs text-onyx cursor-pointer group/parent hover:bg-khaki active:bg-khaki md:h-9 md:text-[15px] md:px-[10px]"
+          class="relative z-10 flex items-center uppercase border-none rounded-[5px] duration-150 text-onyx cursor-pointer group/parent hover:bg-khaki active:bg-khaki leading-none text-[calc(12px+3*((100vw-375px)/(768-375)))] p-[calc(8px+2*((100vw-375px)/(768-375)))] md:rounded-[6px] md:text-[15px] md:p-[10px] xl:text-[clamp(15px,calc(15px+3*((100vw-1280px)/(1536-1280))),18px)] xl:p-[clamp(10px,calc(10px+2*((100vw-1280px)/(1536-1280))),12px)] xl:rounded-[clamp(6px,calc(6px+2*((100vw-1280px)/(1536-1280))),8px)]"
           type="button"
         >
           Узнайте больше
@@ -32,6 +32,6 @@
 
     <x-blocks.statistics />
 
-    <x-blocks.services />
+    {{-- <x-blocks.services /> --}}
   </main>
 @endsection
