@@ -38,6 +38,7 @@ servicesList?.addEventListener('click', (evt) => {
       servicesItems?.forEach((child, index) => {
         if (index !== 0) {
           child.style.marginTop = `-${child.offsetHeight + 4}px`;
+          // child.style.color = 'transparent';
         }
       });
     } else {
@@ -46,8 +47,19 @@ servicesList?.addEventListener('click', (evt) => {
       servicesItems?.forEach((child, index) => {
         if (index !== 0) {
           child.style.marginTop = 0;
+          // child.style.color = 'inherit';
         }
       });
     }
   }
 });
+
+window.expandResponsiveGroups = (input) => {
+  return input.replace(/(\w+):\(([^)]+)\)/g, (_, prefix, group) => {
+    return group
+      .trim()
+      .split(/\s+/)
+      .map(cls => `${prefix}:${cls}`)
+      .join(' ');
+  });
+}

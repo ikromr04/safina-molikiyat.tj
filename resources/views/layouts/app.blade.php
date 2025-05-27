@@ -6,18 +6,9 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta
-    name="viewport"
-    content="width=device-width, initial-scale=1.0"
-  >
-  <meta
-    http-equiv="X-UA-Compatible"
-    content="ie=edge"
-  >
-  <meta
-    robots="X-UA-Compatible"
-    content="ie=edge"
-  >
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta robots="X-UA-Compatible" content="ie=edge">
 
   <link
     rel="preconnect"
@@ -41,14 +32,14 @@
   <title>{{ env('APP_NAME') }}</title>
 </head>
 
-<body class="bg-onyx text-platinum m-0 group leading-[1.2]">
+<body class="bg-onyx text-platinum m-0 group leading-[1.2] @md('bg-red-500')">
   @include('layouts.icons')
 
   @include('layouts.header')
 
   @yield('content')
 
-  {{-- @include('layouts.footer') --}}
+  @include('layouts.footer')
 
   <script src="https://unpkg.com/lottie-web@latest/build/player/lottie.min.js"></script>
   @vite('resources/js/app.js')

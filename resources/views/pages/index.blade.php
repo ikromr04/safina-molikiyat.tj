@@ -32,6 +32,6 @@
 
     <x-blocks.statistics />
 
-    {{-- <x-blocks.services /> --}}
+    <x-blocks.services />
   </main>
 @endsection
