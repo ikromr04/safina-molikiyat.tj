@@ -122,3 +122,25 @@
     @apply font-light;
   }
 }
+
+.button {
+  @apply relative z-0 flex items-center justify-center h-8 gap-2 rounded-[7px] duration-150 bg-platinum/20 border-none text-platinum text-sm p-[0_10px] mb-2 cursor-pointer leading-none md:text-[calc(14px+4*((100vw-768px)/512))] xl:text-[min(calc(18px+2*((100vw-1280px)/256)),20px)] xl:h-[min(calc(32px+4*((100vw-1280px)/256)),36px)] xl:px-[min(calc(10px+2*((100vw-1280px)/256)),12px)];
+
+  &:hover {
+    @apply text-khaki;
+  }
+
+  &::after {
+    content: "";
+    @apply absolute top-[calc(100%+8px)] w-0 h-px bg-khaki duration-150;
+  }
+
+  &:active::after,
+  &:hover::after {
+    @apply w-4 xl:w-5;
+  }
+}
+
+.button__icon {
+  @apply flex min-w-[17px] w-[17px] h-[17px] duration-150 xl:min-w-[min(calc(17px+3*((100vw-1280px)/256)),20px)] xl:h-[min(calc(17px+3*((100vw-1280px)/256)),20px)];
+}

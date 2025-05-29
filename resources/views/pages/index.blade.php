@@ -21,17 +21,16 @@
           <span class="absolute left-1/2 top-[calc(100%+6px)] -translate-x-1/2 h-[1px] w-0 duration-150 bg-khaki rounded-full group-hover/parent:w-3 group-active/parent:w-3 md:top-[calc(100%+8px)] md:group-hover/parent:w-4 md:group-active/parent:w-4 xl:group-active/parent:w-5 xl:top-[calc(100%+10px)]"></span>
         </button>
 
-        <div
-          class="absolute left-0 top-1/2 -translate-y-1/2 w-full h-[160%] overflow-hidden bg-center pattern md:bg-[length:34px_auto] xl:bg-[length:42px_auto] 2xl:bg-[length:52px_auto]"
-          style="background-image: url('/images/pattern.svg');"
-        >
-          <div class="absolute top-0 left-0 z-10 w-full h-full bg-[linear-gradient(to_bottom,#1f2937_0,transparent_50%,#1f2937_100%)]"></div>
-        </div>
+        <div class="absolute left-0 top-1/2 -translate-y-1/2 w-full h-[160%] overflow-hidden bg-center bg-[url('/public/images/pattern.svg')] pattern md:bg-[length:34px_auto] xl:bg-[length:42px_auto] 2xl:bg-[length:52px_auto] after:absolute after:top-0 after:left-0 after:z-10 after:w-full after:h-full after:bg-[linear-gradient(to_bottom,#1f2937_0,transparent_50%,#1f2937_100%)]"></div>
       </div>
     </div>
 
     <x-blocks.statistics />
 
     <x-blocks.services />
+
+    <div class="relative z-0 h-[100px] overflow-hidden bg-center bg-[url('/public/images/pattern.svg')] after:absolute after:top-0 after:left-0 after:z-10 after:w-full after:h-full after:bg-[linear-gradient(to_bottom,#1f2937_0,transparent_50%,#1f2937_100%)] md:hidden"></div>
+
+    <x-blocks.business-center />
   </main>
 @endsection
