@@ -1,4 +1,4 @@
-<section class="relative z-10 container">
+<section class="relative z-10 container mb-10 xl:mb-4">
   <h2 class="title mt-0 mb-6 md:mb-0">
     <small class="sm:block">Откройте новое</small>
     Бизнес-Пространство
@@ -96,7 +96,7 @@
     </li>
   </ul>
 
-  <div class="flex justify-between mb-8 gap-1 md:absolute md:bottom-0 md:right-0 md:mb-0 xl:gap-2 xl:bottom-12">
+  <div class="flex justify-between gap-1 md:absolute md:bottom-0 md:right-0 xl:gap-2 xl:bottom-12">
     <button class="button" type="button">
       <svg class="button__icon">
         <use xlink:href="#globe" />

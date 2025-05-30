@@ -144,3 +144,66 @@
 .button__icon {
   @apply flex min-w-[17px] w-[17px] h-[17px] duration-150 xl:min-w-[min(calc(17px+3*((100vw-1280px)/256)),20px)] xl:h-[min(calc(17px+3*((100vw-1280px)/256)),20px)];
 }
+
+.tenant-services-swiper {
+  .swiper-wrapper {
+    @apply list-none m-0 p-0;
+  }
+
+  .swiper-wrapper {
+    @apply xl:flex xl:justify-center xl:!transform-none;
+  }
+
+  .swiper-slide {
+    @apply relative z-0 w-max xl:max-h-[min(calc(93px+16*((100vw-1280px)/256)),109px)] xl:flex xl:items-start;
+
+    button {
+      @apply absolute left-0 top-0 w-full h-full border-none bg-transparent text-inherit cursor-pointer text-center z-10 whitespace-pre-line text-[12px] duration-150 md:text-[calc(12px+3*((100vw-768px)/512))] xl:text-[min(calc(18px+2*((100vw-1280px)/256)),20px)];
+    }
+
+    svg {
+      stroke-opacity: 0;
+      @apply flex w-[calc(216px+17*((100vw-375px)/393))] -mx-[calc(28px+2*((100vw-375px)/393))] duration-150 aspect-[216/62] md:w-[calc(233px+91*((100vw-768px)/512))] md:-mx-[calc(30px+12*((100vw-768px)/512))] xl:w-[min(calc(324px+56*((100vw-1280px)/256)),380px)] xl:-mx-[min(calc(42px+7*((100vw-1280px)/256)),49px)];
+    }
+
+    &:hover {
+      button {
+        @apply xl:text-[min(calc(21px+4*((100vw-1280px)/256)),24px)];
+      }
+
+      svg {
+        @apply xl:w-[min(calc(388px+68*((100vw-1280px)/256)),456px)] xl:[stroke-opacity:100] xl:-mx-[calc(50px+4*((100vw-1280px)/256))];
+      }
+    }
+  }
+
+  .swiper-slide.odd {
+    @apply xl:items-end;
+
+    svg {
+      @apply scale-y-[-1];
+    }
+  }
+
+  .swiper-slide-prev,
+  .swiper-slide-next {
+    button {
+      @apply md:text-[calc(14px+4*((100vw-768px)/512))] xl:text-[min(calc(18px+2*((100vw-1280px)/256)),20px)];
+    }
+
+    svg {
+      @apply md:[stroke-opacity:100] xl:[stroke-opacity:0];
+    }
+  }
+
+  .swiper-slide-active {
+    button {
+      @apply text-[14px] md:text-[calc(14px+4*((100vw-768px)/512))] xl:text-[min(calc(18px+2*((100vw-1280px)/256)),20px)];
+    }
+
+    svg {
+      stroke-opacity: 100;
+      @apply xl:[stroke-opacity:0];
+    }
+  }
+}
