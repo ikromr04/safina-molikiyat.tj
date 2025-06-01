@@ -32,5 +32,7 @@
     <div class="relative z-0 h-[100px] overflow-hidden bg-center bg-[url('/public/images/pattern.svg')] after:absolute after:top-0 after:left-0 after:z-10 after:w-full after:h-full after:bg-[linear-gradient(to_bottom,#1f2937_0,transparent_50%,#1f2937_100%)] md:hidden"></div>
 
     <x-blocks.transform />
+
+    <x-blocks.owner-services />
   </main>
 @endsection

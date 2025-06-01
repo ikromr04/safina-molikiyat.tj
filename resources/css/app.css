@@ -145,7 +145,8 @@
   @apply flex min-w-[17px] w-[17px] h-[17px] duration-150 xl:min-w-[min(calc(17px+3*((100vw-1280px)/256)),20px)] xl:h-[min(calc(17px+3*((100vw-1280px)/256)),20px)];
 }
 
-.tenant-services-swiper {
+.tenant-services-swiper,
+.owner-services-swiper {
   .swiper-wrapper {
     @apply list-none m-0 p-0;
   }
