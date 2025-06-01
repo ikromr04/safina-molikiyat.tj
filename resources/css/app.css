@@ -114,7 +114,7 @@
 }
 
 .title {
-  @apply text-[calc(18px+6*((100vw-375px)/(768-375)))] p-[0_10px] font-normal uppercase leading-[1.2] md:text-[calc(24px+10*((100vw-768px)/(1280-768)))] md:px-[calc(10px+4*((100vw-768px)/512))] xl:text-[clamp(34px,calc(34px+6*((100vw-1280px)/(1536-1280))),40px)] xl:px-[calc(14px+2*((100vw-1280px)/(1536-1280)))] 2xl:px-[15px];
+  @apply text-[calc(18px+6*((100vw-375px)/(768-375)))] pl-[10px] font-normal uppercase leading-[1.2] md:text-[calc(24px+10*((100vw-768px)/(1280-768)))] md:pl-[calc(10px+4*((100vw-768px)/512))] xl:text-[clamp(34px,calc(34px+6*((100vw-1280px)/(1536-1280))),40px)] xl:pl-[calc(14px+2*((100vw-1280px)/(1536-1280)))] 2xl:pl-[15px];
 
   small {
     font-size: inherit;
