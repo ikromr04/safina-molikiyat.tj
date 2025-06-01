@@ -21,7 +21,7 @@
       Гарантия качества и соблюдения всех обязательств
     </strong>
 
-    <ol class="font-light pl-5 m-0 flex flex-col gap-4 mb-6 text-sm md:grid md:grid-cols-3 md:gap-x-12 md:mb-[calc(24px+24*((100vw-768px)/512))] md:text-[calc(14px+4*((100vw-768px)/512))] md:px-[calc(16px+100*((100vw-768px)/512))] xl:text-[min(calc(18px+2*((100vw-1280px)/256)),20px)] xl:gap-x-[min(calc(48px+62*((100vw-1280px)/256)),110px)] xl:px-[min(calc(100px+16*((100vw-1280px)/256)),116px)]">
+    <ol class="font-light pl-5 m-0 flex flex-col gap-4 mb-8 text-sm md:grid md:grid-cols-3 md:gap-x-12 md:mb-[calc(24px+24*((100vw-768px)/512))] md:text-[calc(14px+4*((100vw-768px)/512))] md:px-[calc(16px+100*((100vw-768px)/512))] xl:text-[min(calc(18px+2*((100vw-1280px)/256)),20px)] xl:gap-x-[min(calc(48px+62*((100vw-1280px)/256)),110px)] xl:px-[min(calc(100px+16*((100vw-1280px)/256)),116px)]">
       <li>
         Комплексное управление объектом и взаимоотношений со стейкхолдерами*.
         <span class="block mt-4 text-[10px] xl:text-[calc(10px+2*((100vw-1280px)/256))]">*от подрядных услуг до поддержки функциональности объекта</span>
@@ -33,5 +33,14 @@
         Профессиональная юридическая поддержка и финансовый анализ и управленческие рекомендации
       </li>
     </ol>
+  </div>
+
+  <div class="flex justify-between gap-1 mb-8 md:justify-end md:mb-10 xl:mt-12 xl:mb-14 xl:gap-2 2xl:mt-[72px] 2xl:mb-20">
+    <button class="button" type="button">
+      О компании
+    </button>
+    <button class="button" type="button">
+      Отдать объект в управление
+    </button>
   </div>
 </section>
