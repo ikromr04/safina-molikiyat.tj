@@ -15,9 +15,21 @@
     "file": "assets/SourceSansPro-Regular-DttFCsV7.woff2",
     "src": "public/fonts/SourceSansPro-Regular.woff2"
   },
+  "public/images/business-center.svg": {
+    "file": "assets/business-center-BVcBGXv3.svg",
+    "src": "public/images/business-center.svg"
+  },
   "public/images/logo.svg": {
     "file": "assets/logo-35Yh7Q2Y.svg",
     "src": "public/images/logo.svg"
+  },
+  "public/images/pattern.svg": {
+    "file": "assets/pattern-XrSY4Za-.svg",
+    "src": "public/images/pattern.svg"
+  },
+  "public/images/safina-tower.svg": {
+    "file": "assets/safina-tower-DobpbCNa.svg",
+    "src": "public/images/safina-tower.svg"
   },
   "public/images/trapezoid-outlined.svg": {
     "file": "assets/trapezoid-outlined-By0JdMqa.svg",
@@ -28,12 +40,12 @@
     "src": "public/images/trapezoid.svg"
   },
   "resources/css/app.css": {
-    "file": "assets/app-DslkMcoB.css",
+    "file": "assets/app-Bt5PSKjq.css",
     "src": "resources/css/app.css",
     "isEntry": true
   },
   "resources/js/app.js": {
-    "file": "assets/app-DIyNa_Q4.js",
+    "file": "assets/app-DGUsYD80.js",
     "name": "app",
     "src": "resources/js/app.js",
     "isEntry": true

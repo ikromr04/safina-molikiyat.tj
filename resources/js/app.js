@@ -116,3 +116,28 @@ new Swiper('.owner-services-swiper', {
     },
   },
 });
+
+const advantagesCenterList = document.querySelector('[data-list="advantages"]');
+const advantagesCenterItems = advantagesCenterList.querySelectorAll('li');
+
+advantagesCenterList?.addEventListener('click', (evt) => {
+  if (window.innerWidth < 768) {
+    if (evt.currentTarget.classList.contains('collapsed')) {
+      evt.currentTarget.classList.remove('collapsed');
+
+      advantagesCenterItems?.forEach((child, index) => {
+        if (index !== 0) {
+          child.style.marginTop = `-${child.offsetHeight + 4}px`;
+        }
+      });
+    } else {
+      evt.currentTarget.classList.add('collapsed');
+
+      advantagesCenterItems?.forEach((child, index) => {
+        if (index !== 0) {
+          child.style.marginTop = 0;
+        }
+      });
+    }
+  }
+});
