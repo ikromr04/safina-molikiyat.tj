@@ -1,8 +1,4 @@
 <footer>
-  <div class="relative z-0 h-[120px] overflow-hidden bg-center" style="background-image: url('/images/pattern.svg');">
-    <div class="absolute top-0 left-0 z-10 w-full h-full bg-[linear-gradient(to_bottom,#1f2937_0,transparent_50%,#1f2937_100%)]"></div>
-  </div>
-
   <div class="container">
     <a class="flex items-center font-light justify-center h-8 px-4 rounded bg-platinum/20 text-inherit no-underline gap-2 duration-150 hover:text-khaki" href="https://yandex.tj/maps/10318/dushanbe/house/YkEYcQ5hSEIHQF1ifXl2eHtgZw==/?ll=68.791454%2C38.579576&z=18" target="_blank">
       <svg width="14" height="19">
