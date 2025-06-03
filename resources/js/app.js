@@ -141,3 +141,23 @@ advantagesCenterList?.addEventListener('click', (evt) => {
     }
   }
 });
+
+new Swiper('.projects-swiper', {
+  initialSlide: 1,
+  loop: true,
+  slidesPerView: 'auto',
+  centeredSlides: true,
+  breakpoints: {
+    480: {
+      initialSlide: 2,
+    },
+    768: {
+      initialSlide: 2,
+    },
+    1280: {
+      enabled: false,
+      loop: false,
+      initialSlide: 2,
+    },
+  },
+});

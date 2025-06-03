@@ -146,7 +146,8 @@
 }
 
 .tenant-services-swiper,
-.owner-services-swiper {
+.owner-services-swiper,
+.projects-swiper {
   .swiper-wrapper {
     @apply list-none m-0 p-0;
   }
@@ -205,6 +206,41 @@
     svg {
       stroke-opacity: 100;
       @apply xl:[stroke-opacity:0];
+    }
+  }
+}
+
+.projects-swiper {
+  .swiper-wrapper {
+    @apply pb-[54px] md:pb-[64px] xl:pb-[88px];
+  }
+
+  .swiper-slide {
+    button {
+      @apply uppercase;
+    }
+
+    p {
+      @apply absolute left-1/2 top-full -translate-x-1/2 mt-[10px] mb-0 text-center w-[280px] uppercase text-xs font-light duration-150 opacity-0 invisible md:w-[160px] md:text-[10px];
+    }
+
+    &:hover {
+      p {
+        @apply xl:text-[12px] xl:opacity-100 xl:visible;
+      }
+    }
+  }
+
+  .swiper-slide-active {
+    p {
+      @apply opacity-100 visible xl:opacity-0 xl:invisible;
+    }
+  }
+
+  .swiper-slide-prev,
+  .swiper-slide-next {
+    p {
+      @apply md:opacity-100 md:visible xl:opacity-0 xl:invisible;
     }
   }
 }
