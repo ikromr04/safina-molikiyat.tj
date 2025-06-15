@@ -1,4 +1,4 @@
-<section class="relative z-10 container mb-10 xl:mb-4">
+<section class="relative z-10 container mb-10 xl:mb-4" data-trigger-header-sticky>
   <h2 class="title mt-0 mb-6 md:mb-0">
     <small class="sm:block">Откройте новое</small>
     Бизнес-Пространство

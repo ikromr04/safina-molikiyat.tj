@@ -17,7 +17,7 @@
   <title>{{ env('APP_NAME') }}</title>
 </head>
 
-<body class="bg-onyx text-platinum m-0 group leading-[1.2]">
+<body class="bg-onyx text-platinum m-0 group leading-[1.2] no-scrollbar">
   @include('layouts.icons')
 
   @include('layouts.header')

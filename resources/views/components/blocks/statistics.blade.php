@@ -1,5 +1,5 @@
 <section class="container z-10 -mt-8 mb-[calc(32px+32*((100vw-375px)/(768-375)))] md:-mt-12 md:mb-16 xl:mb-[calc(64px+16*((100vw-1280px)/(1536-1280)))] 2xl:mb-20">
-  <h2 class="title flex flex-col mt-0 mb-[calc(32px+24*((100vw-375px)/(768-375)))] md:mb-[56px] xl:mb-[calc(56px+8*((100vw-1280px)/(1536-1280)))] 2xl:mb-16">
+  <h2 class="title flex flex-col mt-0 mb-[calc(32px+24*((100vw-375px)/(768-375)))] md:mb-[56px] xl:mb-[calc(56px+8*((100vw-1280px)/(1536-1280)))] 2xl:mb-16" id="scroll-follow">
     Международный лидер
     <small>в сфере управления недвижимостью</small>
   </h2>

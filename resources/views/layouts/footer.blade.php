@@ -1,4 +1,4 @@
-<footer>
+<footer data-footer>
   <div class="container">
     <div class="md:flex md:justify-between md:items-center xl:grid xl:grid-cols-[1fr_153px_1fr]">
       <ul class="fixed left-0 top-[153px] z-20 overflow-auto backdrop-blur-[120px] w-screen h-[calc(100%-153px-128px)] text-inherit flex flex-col list-none m-0 p-0 invisible opacity-0 duration-150 bg-khaki/5 group-[.menu-shown]:visible group-[.menu-shown]:opacity-100 py-4 items-center md:opacity-100 md:visible md:static md:w-auto md:h-auto md:flex-row md:bg-transparent md:py-0 md:gap-x-1 font-light xl:font-normal">
@@ -69,9 +69,9 @@
     </p>
   </div>
 
-  <div class="fixed bottom-0 left-0 z-40 flex items-center w-screen h-32 bg-[linear-gradient(to_bottom,transparent_0,#1f2937_24%)] group-[.menu-shown]:bg-onyx md:hidden">
-    <ul class="flex container justify-between list-none p-0 m-0">
-      <li>
+  <div class="fixed bottom-0 left-0 z-40 flex items-center w-screen h-32 bg-[linear-gradient(to_bottom,transparent_0,#1f2937_24%)] group-[.menu-shown]:bg-onyx md:hidden xl:flex xl:h-0">
+    <ul class="flex container justify-between list-none p-0 m-0 duration-300 xl:relative xl:opacity-0 xl:invisible">
+      <li class="xl:hidden">
         <a class="flex w-max h-max text-inherit p-[10px] duration-150 hover:text-khaki" href="tel:+992999999999">
           <svg width="16" height="16">
             <use xlink:href="#call" />
@@ -81,16 +81,25 @@
           </span>
         </a>
       </li>
-      <li>
+      <li class="xl:absolute xl:bottom-[40vh] xl:translate-x-1/2 xl:translate-y-1/2 xl:-right-[min(calc(32*((100vw-1280px)/256)),32px)]">
         <a class="email" href="mailto:noreply@safina-molikiyat.tj">
-          <svg class="email__icon" width="21" height="14">
+          <svg class="email__icon xl:flex xl:min-w-[min(calc(26px+4*((100vw-1280px)/256)),30px)] xl:h-auto" width="21" height="14">
             <use xlink:href="#mail" />
           </svg>
           <span class="sr-only">
             noreply@safina-molikiyat.tj
           </span>
-          <span class="email__dot"></span>
+          <span class="email__dot xl:!w-2 xl:!h-2 2xl:!w-[10px] 2xl:!h-[10px]"></span>
         </a>
+      </li>
+      <li class="hidden xl:flex xl:absolute xl:right-full xl:bottom-[40vh] xl:translate-y-1/2 xl:w-5 xl:h-[173px] xl:mr-[min(calc(32*((100vw-1280px)/256)),32px)]">
+        <button class="absolute left-full bottom-0 origin-bottom-left -rotate-90 cursor-pointer flex items-center gap-x-[10px] border-none bg-transparent p-0 text-inherit font-light text-[min(calc(16px+4*((100vw-1280px)/256)),20px)] leading-none justify-center w-[173px] h-5" id="to-top" type="button">
+          <span class="relative z-0 flex p-px">
+            <span class="flex w-[min(calc(86px+14*((100vw-1280px)/256)),100px)] h-px rounded-full bg-khaki"></span>
+            <span class="scrolled-percent absolute top-0 right-0 min-w-1 h-full rounded-full bg-khaki duration-150"></span>
+          </span>
+          Наверх
+        </button>
       </li>
     </ul>
   </div>
