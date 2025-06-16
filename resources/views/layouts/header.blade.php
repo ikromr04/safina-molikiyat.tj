@@ -37,7 +37,7 @@
       <img src="{{ asset('/images/safina-molikiyat.svg') }}" width="127" height="16" alt="Сафина моликият">
     </a>
 
-    <a class="hidden ml-auto text-inherit no-underline items-center h-7 rounded px-2 font-light md:flex md:text-[clamp(16px,calc(16px+4*((100vw-768px)/(1280-768))),20px)] xl:font-normal xl:h-9 xl:px-3" href="tel:+992999999999">
+    <a class="navlink relative hidden ml-auto text-inherit no-underline items-center h-7 rounded px-2 font-light md:flex md:text-[clamp(16px,calc(16px+4*((100vw-768px)/(1280-768))),20px)] xl:font-normal xl:h-9 xl:px-3" href="tel:+992999999999">
       <svg class="flex mr-[6px] xl:mr-2 xl:w-4 xl:h-4" width="13" height="13">
         <use xlink:href="#call" />
       </svg>
@@ -54,12 +54,12 @@
 
       <ul class="lang__list">
         <li>
-          <button class="lang__button !px-[10px] !justify-start lg:!font-normal" type="button">
+          <button class="lang__button px-[10px] !justify-start w-full lg:!font-normal md:px-[calc(10px+4*((100vw-768px)/512))] xl:px-[calc(14px+2*((100vw-1280px)/256))] 2xl:px-4" type="button">
             EN
           </button>
         </li>
         <li>
-          <button class="lang__button !px-[10px] !justify-start lg:!font-normal" type="button">
+          <button class="lang__button px-[10px] !justify-start w-full lg:!font-normal md:px-[calc(10px+4*((100vw-768px)/512))] xl:px-[calc(14px+2*((100vw-1280px)/256))] 2xl:px-4" type="button">
             TJ
           </button>
         </li>

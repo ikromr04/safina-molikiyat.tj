@@ -89,12 +89,12 @@ html {
   @apply hidden list-none p-0 m-0 duration-150;
 
   .lang--shown & {
-    @apply absolute left-[-2px] top-[-2px] flex flex-col p-[2px] pt-[32px] gap-[2px] w-[calc(100%+4px)] rounded bg-khaki/10 backdrop-blur-xs;
+    @apply absolute left-[-2px] top-[-2px] flex flex-col p-[2px] pt-[28px] gap-[2px] w-[calc(100%+4px)] rounded bg-khaki/10 backdrop-blur-xs md:pt-[calc(28px+6*((100vw-768px)/512))] xl:pt-10;
   }
 }
 
 .email {
-  @apply relative z-0 flex w-max h-max text-inherit duration-150 p-[10px] hover:text-khaki;
+  @apply relative z-0 flex w-max h-max text-inherit duration-150 p-[10px] hover:text-khaki bg-transparent border-none cursor-pointer;
 }
 
 .email__dot {
@@ -285,13 +285,14 @@ body.menu-shown [data-header="sticky"] {
 
 .navlink::after {
   content: "";
-  @apply absolute left-1/2 top-full w-4 h-px rounded-full bg-khaki -translate-x-1/2 translate-y-[6px] duration-150 opacity-0 md:translate-y-[7px] md:h-[3px] md:w-[18px];
+  @apply absolute left-1/2 top-full h-px rounded-full bg-khaki -translate-x-1/2 translate-y-[6px] duration-150 w-0 md:translate-y-[7px] md:h-[3px];
 }
 
+.navlink:hover,
 .navlink.active {
   @apply bg-platinum/20 text-khaki;
 
   &::after {
-    @apply opacity-100;
+    @apply w-4 md:w-[18px];
   }
 }
