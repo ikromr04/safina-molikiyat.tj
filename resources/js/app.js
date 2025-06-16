@@ -14,6 +14,19 @@ document.addEventListener('click', (evt) => {
   } else {
     lang.classList.toggle('lang--shown');
   }
+
+  if (evt.target.closest('[data-trigger-modal]')) {
+    const triggerModalEl = evt.target.closest('[data-trigger-modal]');
+    const modalEl = document.querySelector(`[data-form="${triggerModalEl.dataset.triggerModal}"]`);
+
+    modalEl.classList.remove('invisible', 'opacity-0');
+    document.body.classList.add('overflow-hidden')
+  }
+
+  if (evt.target.closest('[data-close-form]')) {
+    evt.target.closest('[data-form]').classList.add('invisible', 'opacity-0');
+    document.body.classList.remove('overflow-hidden')
+  }
 });
 
 document.addEventListener('scroll', () => {
@@ -268,3 +281,17 @@ function isCovering50PercentViewport(el) {
 
   return visibleHeight >= viewportHeight * 0.5;
 }
+
+const animEls = document.querySelectorAll('.smart-anim');
+
+animEls.forEach((element) => {
+  setInterval(() => {
+    if (element.classList.contains('smart-left')) {
+      element.classList.remove('smart-left')
+      element.classList.add('smart-right')
+    } else {
+      element.classList.add('smart-left')
+      element.classList.remove('smart-right')
+    }
+  }, 5000)
+});

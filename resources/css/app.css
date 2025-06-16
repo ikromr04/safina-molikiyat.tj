@@ -296,3 +296,15 @@ body.menu-shown [data-header="sticky"] {
     @apply w-4 md:w-[18px];
   }
 }
+
+.smart-anim {
+  @apply absolute -z-10 rounded-full duration-[600ms] bg-khaki/35 w-[270px] h-[270px];
+}
+
+.smart-left {
+  @apply left-0 -translate-x-full;
+}
+
+.smart-right {
+  @apply left-full translate-x-0;
+}

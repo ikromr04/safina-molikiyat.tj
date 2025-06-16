@@ -20,7 +20,7 @@
         </div>
       </div>
 
-      {{-- <x-forms.universal /> --}}
+      <x-forms.universal />
 
       <x-blocks.statistics />
 
