@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html class="font-sans" lang="{{ config('app.locale') }}">
+<html class="page" lang="{{ config('app.locale') }}">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <meta robots="X-UA-Compatible" content="ie=edge">
+  <meta name="robots" content="noindex, nofollow">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,7 +17,7 @@
   <title>{{ env('APP_NAME') }}</title>
 </head>
 
-<body class="bg-onyx text-platinum m-0 group leading-[1.2] no-scrollbar">
+<body class="page__body no-scrollbar" id="top">
   @include('layouts.icons')
 
   @include('layouts.header')

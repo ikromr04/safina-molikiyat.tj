@@ -1,71 +1,70 @@
-<header class="header sticky z-40 top-0 flex flex-col pt-[60px] pb-10 bg-[linear-gradient(to_top,transparent_0,#1f2937_40px)] duration-300 md:-top-[143px] group-[.menu-shown]:bg-onyx xl:-top-[181px] xl:text-xl xl:bg-[linear-gradient(to_top,transparent_0,#1f2937_60px)] xl:pb-[60px] md:group-[.menu-shown]:bg-transparent" data-header>
-  <nav class="container grid grid-cols-[56px_1fr_56px] items-center justify-between gap-y-2 md:flex md:flex-wrap md:gap-y-2 md:gap-x-2 xl:gap-x-1 xl:relative">
-    <div class="md:hidden menu-toggler">
-      <button class="flex justify-center items-center rounded bg-transparent cursor-pointer border-none p-[0_10px] h-7 app-nav-toggler xl:w-[44px] xl:h-[36px]" type="button">
-        <span class="relative flex w-4 h-2 before:content-[''] after:content-[''] duration-150 group-[.menu-shown]:w-3 group-[.menu-shown]:h-[10px] xl:w-full xl:group-[.menu-shown]:h-[13px]">
-          <span class="absolute left-0 top-0 w-full h-[1px] rounded-full bg-platinum duration-150 group-[.menu-shown]:bg-khaki group-[.menu-shown]:rotate-[38deg] group-[.menu-shown]:w-[15px] group-[.menu-shown]:origin-left xl:group-[.menu-shown]:w-[20px]"></span>
-          <span class="absolute left-0 bottom-0 w-1/2 h-[1px] rounded-full bg-platinum duration-150 group-[.menu-shown]:bg-khaki group-[.menu-shown]:-rotate-[38deg] group-[.menu-shown]:w-[15px] group-[.menu-shown]:origin-left xl:group-[.menu-shown]:w-[20px]"></span>
-        </span>
-        <span class="sr-only">Скрыть/Показать меню</span>
-      </button>
-    </div>
+<header class="header" data-header>
+  <nav class="nav" data-nav>
+    <div class="nav__container container">
+      <div class="nav__locale locale" data-locale>
+        <button class="locale__toggler" type="button" onclick="window.toggleLocale()">
+          {{ app()->getLocale() }}
+          <svg class="locale__icon" width="7" height="5">
+            <use href="#caret-down" />
+          </svg>
+        </button>
 
-    <ul class="navlinks fixed left-0 top-[137px] z-20 overflow-auto backdrop-blur-[120px] w-screen h-[calc(100%-137px-128px)] text-inherit flex flex-col list-none m-0 p-0 invisible opacity-0 duration-150 bg-khaki/5 origin-left group-[.menu-shown]:visible group-[.menu-shown]:opacity-100 py-4 items-center md:opacity-100 md:visible md:static md:w-auto md:h-auto md:flex-row md:bg-transparent md:overflow-visible md:py-0 md:gap-x-1 font-light xl:font-normal">
-      <li class="md:hidden">
-        <a class="navlink duration-150 relative z-0 active flex h-7 items-center mb-2 text-inherit no-underline rounded px-2 md:mb-0 xl:h-9 xl:px-3" href="#about">
-          О нас
-        </a>
-      </li>
-      <li>
-        <a class="navlink duration-150 relative z-0 flex h-7 items-center mb-2 text-inherit no-underline rounded px-[calc(10px+4*((100vw-768px)/512))] md:text-[clamp(16px,calc(16px+4*((100vw-768px)/(1280-768))),20px)] md:mb-0 xl:h-9 xl:px-[calc(14px+2*((100vw-1280px)/(1536-1280)))] 2xl:px-4" href="#renters">
-          Арендаторам
-        </a>
-      </li>
-      <li>
-        <a class="navlink duration-150 relative z-0 flex h-7 items-center mb-2 text-inherit no-underline rounded px-[calc(10px+4*((100vw-768px)/512))] md:text-[clamp(16px,calc(16px+4*((100vw-768px)/(1280-768))),20px)] md:mb-0 xl:h-9 xl:px-[calc(14px+2*((100vw-1280px)/(1536-1280)))] 2xl:px-4" href="#owners">
-          Арендодателям
-        </a>
-      </li>
-      <li>
-        <a class="navlink duration-150 relative z-0 flex h-7 items-center mb-2 text-inherit no-underline rounded px-[calc(10px+4*((100vw-768px)/512))] md:text-[clamp(16px,calc(16px+4*((100vw-768px)/(1280-768))),20px)] md:mb-0 xl:h-9 xl:px-[calc(14px+2*((100vw-1280px)/(1536-1280)))] 2xl:px-4" href="#brokers">
-          Брокерам
-        </a>
-      </li>
-    </ul>
+        <ul class="locale__list">
+          @foreach (config('app.available_locales') as $locale)
+            @if ($locale !== app()->getLocale())
+              <li>
+                <a class="locale__link" href="/{{ $locale !== config('app.fallback_locale') ? $locale : '' }}">
+                  {{ $locale }}
+                </a>
+              </li>
+            @endif
+          @endforeach
+        </ul>
+      </div>
 
-    <a class="navlink-molikiyat flex w-max h-max mx-auto md:hidden" href="">
-      <img src="{{ asset('/images/safina-molikiyat.svg') }}" width="127" height="16" alt="Сафина моликият">
-    </a>
+      <h1 class="nav__logo logo" data-app-title>
+        <img class="logo__image" src="{{ asset('/images/logo.svg') }}" width="152" height="18" alt="@lang('app.name')">
+      </h1>
 
-    <a class="navlink relative hidden ml-auto text-inherit no-underline items-center h-7 rounded px-2 font-light md:flex md:text-[clamp(16px,calc(16px+4*((100vw-768px)/(1280-768))),20px)] xl:font-normal xl:h-9 xl:px-3" href="tel:+992999999999">
-      <svg class="flex mr-[6px] xl:mr-2 xl:w-4 xl:h-4" width="13" height="13">
-        <use xlink:href="#call" />
-      </svg>
-      999 99 99 99
-    </a>
-
-    <div class="lang ml-auto md:ml-0">
-      <button class="lang__button" type="button">
-        RU
-        <svg class="lang__icon" width="7" height="5">
-          <use xlink:href="#dropdown-icon" />
-        </svg>
+      <button class="nav__toggler" type="button" hidden data-nav-toggler onclick="window.toggleNav()">
+        <span class="nav__toggler-icon"><span></span><span></span></span>
+        <span class="sr-only">@lang('nav.toggle')</span>
       </button>
 
-      <ul class="lang__list">
+      <ul class="nav__list">
+        <li class="nav__item">
+          <a class="nav__link" href="#about" data-current>@lang('nav.about')</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="#renters">@lang('nav.renters')</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="#owners">@lang('nav.owners')</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="#brokers">@lang('nav.brokers')</a>
+        </li>
+      </ul>
+
+      <ul class="nav__contacts">
         <li>
-          <button class="lang__button px-[10px] !justify-start w-full lg:!font-normal md:px-[calc(10px+4*((100vw-768px)/512))] xl:px-[calc(14px+2*((100vw-1280px)/256))] 2xl:px-4" type="button">
-            EN
-          </button>
+          <a class="nav__contact-link nav__contact-link--tel" href="tel:@lang('nav.telCode'){{ str_replace(' ', '', __('nav.telNumbers')) }}">
+            <svg class="nav__contact-icon nav__contact-icon--tel" width="16" height="16">
+              <use href="#tel" />
+            </svg>
+            <span class="sr-only">@lang('nav.telNumbers')</span>
+          </a>
         </li>
         <li>
-          <button class="lang__button px-[10px] !justify-start w-full lg:!font-normal md:px-[calc(10px+4*((100vw-768px)/512))] xl:px-[calc(14px+2*((100vw-1280px)/256))] 2xl:px-4" type="button">
-            TJ
-          </button>
+          <a class="nav__contact-link nav__contact-link--mail" href="#contact-form">
+            <svg class="nav__contact-icon nav__contact-icon--mail" width="16" height="10">
+              <use href="#mail" />
+            </svg>
+            <span class="sr-only">@lang('nav.learnMore')</span>
+            <span class="nav__mail-dot"></span>
+          </a>
         </li>
       </ul>
     </div>
-
-    <hr class="border-none my-0 h-[1px] bg-khaki rounded-full w-full col-span-3 xl:mb-4">
   </nav>
 </header>

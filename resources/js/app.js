@@ -1,37 +1,65 @@
-const lang = document.querySelector('.lang');
+document.querySelector('[data-app-title]')?.addEventListener('click', () => window.scrollTo({
+  top: 0,
+  behavior: 'smooth',
+}));
 
-document.addEventListener('click', (evt) => {
-  if (!evt.target.closest('.app-nav-toggler')) {
-    if (window.screen.width < 1280) {
-      document.body.classList.remove('menu-shown');
-    }
+window.toggleLocale = () => {
+  const localeEl = document.querySelector('[data-locale]');
+  const isShown = localeEl.dataset.locale === 'shown';
+
+  const cleanup = () => {
+    localeEl.setAttribute('data-locale', '');
+    document.removeEventListener('click', handleClick);
+    document.removeEventListener('keydown', handleKeydown);
+    window.removeEventListener('scroll', cleanup);
+  };
+
+  const handleClick = (evt) => {
+    if (!evt.target.closest('[data-locale="shown"]')) cleanup();
+  };
+
+  const handleKeydown = (evt) => {
+    if (evt.key === 'Escape') cleanup();
+  };
+
+  if (!isShown) {
+    localeEl.setAttribute('data-locale', 'shown');
+    document.addEventListener('click', handleClick);
+    document.addEventListener('keydown', handleKeydown);
+    window.addEventListener('scroll', cleanup);
   } else {
-    document.body.classList.toggle('menu-shown');
+    cleanup();
   }
+};
 
-  if (!evt.target.closest('.lang__button')) {
-    lang.classList.remove('lang--shown');
+window.toggleNav = () => {
+  const navEl = document.querySelector('[data-nav]');
+  const isShown = navEl.dataset.nav === 'shown';
+
+  const cleanup = () => {
+    document.body.classList.remove('overflow-hidden');
+    navEl.setAttribute('data-nav', '');
+    document.removeEventListener('click', handleClick);
+    document.removeEventListener('keydown', handleKeydown);
+  };
+
+  const handleClick = (evt) => {
+    if (!evt.target.closest('[data-nav-toggler]')) cleanup();
+  };
+
+  const handleKeydown = (evt) => {
+    if (evt.key === 'Escape') cleanup();
+  };
+
+  if (!isShown) {
+    document.body.classList.add('overflow-hidden');
+    navEl.setAttribute('data-nav', 'shown');
+    document.addEventListener('click', handleClick);
+    document.addEventListener('keydown', handleKeydown);
   } else {
-    lang.classList.toggle('lang--shown');
+    cleanup();
   }
-
-  if (evt.target.closest('[data-trigger-modal]')) {
-    const triggerModalEl = evt.target.closest('[data-trigger-modal]');
-    const modalEl = document.querySelector(`[data-form="${triggerModalEl.dataset.triggerModal}"]`);
-
-    modalEl.classList.remove('invisible', 'opacity-0');
-    document.body.classList.add('overflow-hidden')
-  }
-
-  if (evt.target.closest('[data-close-form]')) {
-    evt.target.closest('[data-form]').classList.add('invisible', 'opacity-0');
-    document.body.classList.remove('overflow-hidden')
-  }
-});
-
-document.addEventListener('scroll', () => {
-  lang.classList.remove('lang--shown');
-});
+};
 
 lottie.loadAnimation({
   container: document.getElementById('lottie-container'),
@@ -177,13 +205,6 @@ new Swiper('.projects-swiper', {
   },
 });
 
-const toTopButton = document.querySelector('#to-top');
-
-toTopButton.addEventListener('click', () => window.scrollTo({
-  top: 0,
-  behavior: 'smooth',
-}));
-
 window.addEventListener('scroll', () => {
   const scrollFollow = document.querySelector('#scroll-follow');
   const percentView = document.querySelector('.scrolled-percent');
@@ -235,36 +256,36 @@ window.addEventListener('scroll', () => {
 
   const observerAbout = new IntersectionObserver(([entry]) => {
     if (entry.isIntersecting && isCovering50PercentViewport(blockAboutEl)) {
-      navAboutEl.classList.add('active');
+      navAboutEl.setAttribute('data-current', '');
     } else {
-      navAboutEl.classList.remove('active');
+      navAboutEl.removeAttribute('data-current');
     }
   });
   observerAbout.observe(blockAboutEl);
 
   const observerRenters = new IntersectionObserver(([entry]) => {
     if (entry.isIntersecting && isCovering50PercentViewport(blockRentersEl)) {
-      navRentersEl.classList.add('active');
+      navRentersEl.setAttribute('data-current', '');
     } else {
-      navRentersEl.classList.remove('active');
+      navRentersEl.removeAttribute('data-current');
     }
   });
   observerRenters.observe(blockRentersEl);
 
   const observerOwners = new IntersectionObserver(([entry]) => {
     if (entry.isIntersecting && isCovering50PercentViewport(blockOwnersEl)) {
-      navOwnersEl.classList.add('active');
+      navOwnersEl.setAttribute('data-current', '');
     } else {
-      navOwnersEl.classList.remove('active');
+      navOwnersEl.removeAttribute('data-current');
     }
   });
   observerOwners.observe(blockOwnersEl);
 
   const observerBrokers = new IntersectionObserver(([entry]) => {
     if (entry.isIntersecting && isCovering50PercentViewport(blockBrokersEl)) {
-      navBrokersEl.classList.add('active');
+      navBrokersEl.setAttribute('data-current', '');
     } else {
-      navBrokersEl.classList.remove('active');
+      navBrokersEl.removeAttribute('data-current');
     }
   });
   observerBrokers.observe(blockBrokersEl);

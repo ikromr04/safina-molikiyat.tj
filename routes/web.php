@@ -8,16 +8,19 @@ Route::prefix(parseLocale())->group(function () {
   Route::get('/about', [AppController::class, 'index']);
 });
 
-function parseLocale(){
+function parseLocale()
+{
   $locale = request()->segment(1);
-  $locales = config('app.available_locales');
-  $default = config('app.fallback_locale');
+  $availableLocales = config('app.available_locales');
+  $defaultLocale = config('app.fallback_locale');
 
-  if ($locale !== $default && in_array($locale, $locales)) {
-      app()->setLocale($locale);
-      return $locale;
+  if ($locale !== $defaultLocale && in_array($locale, $availableLocales)) {
+    app()->setLocale($locale);
+
+    return $locale;
   }
 
-  app()->setLocale($default);
+  app()->setLocale($defaultLocale);
+
   return '';
 }

@@ -6,6 +6,7 @@ module.exports = {
     './resources/**/*.js',
     './resources/**/*.ts',
     './resources/**/*.tsx',
+    './resources/**/*.scss',
   ],
   theme: {
     extend: {
