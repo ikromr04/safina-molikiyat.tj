@@ -52,7 +52,7 @@
             <svg class="nav__contact-icon nav__contact-icon--tel" width="16" height="16">
               <use href="#tel" />
             </svg>
-            <span class="sr-only">@lang('nav.telNumbers')</span>
+            <span class="sr-only md:not-sr-only">@lang('nav.telNumbers')</span>
           </a>
         </li>
         <li>

@@ -52,9 +52,11 @@ window.toggleNav = () => {
   };
 
   if (!isShown) {
-    document.body.classList.add('overflow-hidden');
+    if (window.screen.width < 768) {
+      document.body.classList.add('overflow-hidden');
+      document.addEventListener('click', handleClick);
+    }
     navEl.setAttribute('data-nav', 'shown');
-    document.addEventListener('click', handleClick);
     document.addEventListener('keydown', handleKeydown);
   } else {
     cleanup();
@@ -205,22 +207,22 @@ new Swiper('.projects-swiper', {
   },
 });
 
-window.addEventListener('scroll', () => {
-  const scrollFollow = document.querySelector('#scroll-follow');
-  const percentView = document.querySelector('.scrolled-percent');
-  const scrollTop = window.scrollY || document.documentElement.scrollTop;
-  const scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-  const percent = (scrollTop / scrollHeight) * 100;
+// window.addEventListener('scroll', () => {
+//   const scrollFollow = document.querySelector('#scroll-follow');
+//   const percentView = document.querySelector('.scrolled-percent');
+//   const scrollTop = window.scrollY || document.documentElement.scrollTop;
+//   const scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+//   const percent = (scrollTop / scrollHeight) * 100;
 
-  const rect = scrollFollow.getBoundingClientRect();
-  if (rect.top <= 0) {
-    toTopButton.closest('ul').setAttribute('style', 'opacity:100;visibility:visible;')
-  } else {
-    toTopButton.closest('ul').removeAttribute('style')
-  }
+//   const rect = scrollFollow.getBoundingClientRect();
+//   if (rect.top <= 0) {
+//     toTopButton.closest('ul').setAttribute('style', 'opacity:100;visibility:visible;')
+//   } else {
+//     toTopButton.closest('ul').removeAttribute('style')
+//   }
 
-  percentView.setAttribute('style', `width:${percent.toFixed(2)}%`);
-});
+//   percentView.setAttribute('style', `width:${percent.toFixed(2)}%`);
+// });
 
 const headerEl = document.querySelector('[data-header]');
 const triggerHeaderStickyEl = document.querySelector('[data-trigger-header-sticky]');
