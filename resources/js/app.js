@@ -175,7 +175,7 @@ new Swiper('.projects-swiper', {
 // });
 
 const headerEl = document.querySelector('[data-header]');
-const triggerHeaderStickyEl = document.querySelector('[data-trigger-header-sticky]');
+const triggerHeaderStickyEl = document.querySelector('[data-trigger-header]');
 const footerEl = document.querySelector('[data-footer]');
 
 const navAboutEl = document.querySelector('[href="#about"]');
