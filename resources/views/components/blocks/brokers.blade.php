@@ -7,7 +7,7 @@
     <p class="flex pl-[10px] font-normal mb-12 md:leading-none md:pl-[calc(10px+4*((100vw-768px)/512))] md:absolute md:text-[calc(16px+8*((100vw-768px)/512))] md:mt-[calc(16px+8*((100vw-768px)/512))] xl:mt-[min(calc(24px+4*((100vw-1280px)/256)),28px)] xl:text-[min(calc(24px+30*((100vw-1280px)/256)),30px)] xl:pl-[calc(14px+2*((100vw-1280px)/256))] 2xl:pl-[15px]">@lang('brokers.advantages.subtitle')</p>
 
     <svg width="320" height="278">
-      <use href="#logo-symbol" />
+      <use href="#safina-molikiyat" />
     </svg>
     {{-- <div class="h-[250px] mb-12 bg-[url('/public/images/logo.svg')] bg-center bg-no-repeat bg-[length:100%_100%] md:hidden"></div> --}}
 
@@ -27,7 +27,7 @@
       <li class="relative z-30 flex items-start px-[6%] pt-1 pb-3 min-h-12 duration-300 group/parent md:p-0">
         <div class="flex items-center duration-150 gap-x-3 md:absolute md:left-[calc(72px+30*((100vw-768px)/512))] md:top-[calc(116px+88*((100vw-768px)/512))] md:gap-[calc(24px+14*((100vw-768px)/512))] md:items-start xl:left-[min(calc(102px+22*((100vw-1280px)/256)),124px)] xl:top-[min(calc(204px+30*((100vw-1280px)/256)),234px)] xl:gap-[min(calc(38px+6*((100vw-1280px)/256)),44px)]">
           <svg class="min-w-[30px] h-auto duration-150 md:min-w-[calc(38px+10*((100vw-768px)/512))] md:mt-[calc(14px+2*((100vw-768px)/512))] xl:min-w-[min(calc(48px+8*((100vw-1280px)/256)),56px)] xl:group-hover/parent:min-w-[min(calc(56px+10*((100vw-1280px)/256)),66px)]" width="32" height="32">
-            <use href="#business-center" />
+            <use href="#exclusive" />
           </svg>
           <div>
             <h4 class="duration-150 mt-0 mb-1 font-normal leading-[1.2] text-[calc(14px+2*((100vw-375px)/393))] md:text-[calc(16px+2*((100vw-768px)/512))] md:mb-2 xl:text-[clamp(18px,calc(18px+2*((100vw-1280px)/256)),20px)] xl:group-hover/parent:text-[min(calc(20px+4*((100vw-1280px)/256)),24px)]">@lang('brokers.advantages.item2.title')</h4>

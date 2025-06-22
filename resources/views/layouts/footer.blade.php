@@ -1,4 +1,4 @@
-<footer data-footer>
+<footer class="hidden" data-footer>
   <div class="container">
     <div class="md:flex md:justify-between md:items-center xl:grid xl:grid-cols-[1fr_153px_1fr]">
       <a class="hidden w-[153px] h-max xl:flex" href="#top">

@@ -3,6 +3,15 @@ document.querySelector('[data-app-title]')?.addEventListener('click', () => wind
   behavior: 'smooth',
 }));
 
+lottie.loadAnimation({
+  container: document.querySelector('[data-lottie-container]'),
+  renderer: 'svg',
+  loop: true,
+  autoplay: true,
+  loop: false,
+  path: '/lotties/logo.json'
+});
+
 window.toggleLocale = () => {
   const localeEl = document.querySelector('[data-locale]');
   const isShown = localeEl.dataset.locale === 'shown';
@@ -52,7 +61,7 @@ window.toggleNav = () => {
   };
 
   if (!isShown) {
-    if (window.screen.width < 768) {
+    if (window.innerWidth < 768) {
       document.body.classList.add('overflow-hidden');
       document.addEventListener('click', handleClick);
     }
@@ -63,64 +72,30 @@ window.toggleNav = () => {
   }
 };
 
-lottie.loadAnimation({
-  container: document.getElementById('lottie-container'),
-  renderer: 'svg',
-  loop: true,
-  autoplay: true,
-  loop: false,
-  path: '/lotties/logo.json'
-});
-
-const servicesList = document.querySelector('[data-list="services"]');
-const servicesItems = servicesList.querySelectorAll('li');
-
-servicesList?.addEventListener('click', (evt) => {
+window.toggleList = (listEl) => {
   if (window.innerWidth < 768) {
-    if (evt.currentTarget.classList.contains('collapsed')) {
-      evt.currentTarget.classList.remove('collapsed');
+    const itemEls = listEl.querySelectorAll('li');
 
-      servicesItems?.forEach((child, index) => {
+    if (listEl.hasAttribute('data-shrinked')) {
+      listEl.removeAttribute('data-shrinked');
+
+      itemEls?.forEach((itemEl, index) => {
         if (index !== 0) {
-          child.style.marginTop = `-${child.offsetHeight + 4}px`;
+          itemEl.style.marginTop = `-${itemEl.offsetHeight + 4}px`;
+          itemEl.style.color = 'transparent';
         }
       });
     } else {
-      evt.currentTarget.classList.add('collapsed');
+      listEl.setAttribute('data-shrinked', '');
 
-      servicesItems?.forEach((child, index) => {
+      itemEls?.forEach((itemEl, index) => {
         if (index !== 0) {
-          child.style.marginTop = 0;
+          itemEl.removeAttribute('style');
         }
       });
     }
   }
-});
-
-const businessCenterList = document.querySelector('[data-list="business-centers"]');
-const businessCenterItems = businessCenterList.querySelectorAll('li');
-
-businessCenterList?.addEventListener('click', (evt) => {
-  if (window.innerWidth < 768) {
-    if (evt.currentTarget.classList.contains('collapsed')) {
-      evt.currentTarget.classList.remove('collapsed');
-
-      businessCenterItems?.forEach((child, index) => {
-        if (index !== 0) {
-          child.style.marginTop = `-${child.offsetHeight + 4}px`;
-        }
-      });
-    } else {
-      evt.currentTarget.classList.add('collapsed');
-
-      businessCenterItems?.forEach((child, index) => {
-        if (index !== 0) {
-          child.style.marginTop = 0;
-        }
-      });
-    }
-  }
-});
+}
 
 new Swiper('.tenant-services-swiper', {
   initialSlide: 1,
@@ -160,31 +135,6 @@ new Swiper('.owner-services-swiper', {
       initialSlide: 2,
     },
   },
-});
-
-const advantagesCenterList = document.querySelector('[data-list="advantages"]');
-const advantagesCenterItems = advantagesCenterList.querySelectorAll('li');
-
-advantagesCenterList?.addEventListener('click', (evt) => {
-  if (window.innerWidth < 768) {
-    if (evt.currentTarget.classList.contains('collapsed')) {
-      evt.currentTarget.classList.remove('collapsed');
-
-      advantagesCenterItems?.forEach((child, index) => {
-        if (index !== 0) {
-          child.style.marginTop = `-${child.offsetHeight + 4}px`;
-        }
-      });
-    } else {
-      evt.currentTarget.classList.add('collapsed');
-
-      advantagesCenterItems?.forEach((child, index) => {
-        if (index !== 0) {
-          child.style.marginTop = 0;
-        }
-      });
-    }
-  }
 });
 
 new Swiper('.projects-swiper', {
