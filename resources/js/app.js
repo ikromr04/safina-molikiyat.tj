@@ -97,64 +97,28 @@ window.toggleList = (listEl) => {
   }
 }
 
-new Swiper('.tenant-services-swiper', {
-  initialSlide: 1,
-  loop: true,
-  slidesPerView: 'auto',
-  centeredSlides: true,
-  breakpoints: {
-    480: {
-      initialSlide: 2,
-    },
-    768: {
-      initialSlide: 2,
-    },
-    1280: {
-      enabled: false,
-      loop: false,
-      initialSlide: 2,
-    },
-  },
-});
+const sliderEls = document.querySelectorAll('[data-swiper]');
 
-new Swiper('.owner-services-swiper', {
-  initialSlide: 1,
-  loop: true,
-  slidesPerView: 'auto',
-  centeredSlides: true,
-  breakpoints: {
-    480: {
-      initialSlide: 2,
+sliderEls?.forEach((sliderEl) => {
+  new Swiper(sliderEl, {
+    initialSlide: 1,
+    loop: true,
+    slidesPerView: 'auto',
+    centeredSlides: true,
+    breakpoints: {
+      480: {
+        initialSlide: 2,
+      },
+      768: {
+        initialSlide: 2,
+      },
+      1280: {
+        enabled: false,
+        loop: false,
+        initialSlide: 2,
+      },
     },
-    768: {
-      initialSlide: 2,
-    },
-    1280: {
-      enabled: false,
-      loop: false,
-      initialSlide: 2,
-    },
-  },
-});
-
-new Swiper('.projects-swiper', {
-  initialSlide: 1,
-  loop: true,
-  slidesPerView: 'auto',
-  centeredSlides: true,
-  breakpoints: {
-    480: {
-      initialSlide: 2,
-    },
-    768: {
-      initialSlide: 2,
-    },
-    1280: {
-      enabled: false,
-      loop: false,
-      initialSlide: 2,
-    },
-  },
+  });
 });
 
 // window.addEventListener('scroll', () => {

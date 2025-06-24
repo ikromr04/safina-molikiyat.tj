@@ -81,40 +81,41 @@
     </ul>
   </section>
 
-  <section class="md:mb-12 xl:mb-16">
-    <h3 class="title container mt-0 mb-6 md:mb-12 xl:mb-16">@lang('renters.services.title')</h3>
+  <section class="renters-services">
+    <h3 class="renters-services__title title title--reverse container">@lang('renters.services.title')</h3>
 
-    <div class="swiper tenant-services-swiper">
+    <div class="swiper" data-swiper>
       <ul class="swiper-wrapper">
         <li class="swiper-slide odd">
           <a href="#contact-form">@lang('renters.services.item1')</a>
-          {{-- <svg>
-            <use href="#ramp" />
-          </svg> --}}
         </li>
         <li class="swiper-slide">
           <a href="#contact-form">@lang('renters.services.item2')</a>
-          {{-- <svg>
-            <use href="#ramp" />
-          </svg> --}}
         </li>
         <li class="swiper-slide odd">
           <a href="#contact-form">@lang('renters.services.item3')</a>
-          {{-- <svg>
-            <use href="#ramp" />
-          </svg> --}}
         </li>
         <li class="swiper-slide">
           <a href="#contact-form">@lang('renters.services.item4')</a>
-          {{-- <svg>
-            <use href="#ramp" />
-          </svg> --}}
         </li>
         <li class="swiper-slide odd">
           <a href="#contact-form">@lang('renters.services.item5')</a>
-          {{-- <svg>
-            <use href="#ramp" />
-          </svg> --}}
+        </li>
+
+        <li class="swiper-slide xl:!hidden" hidden>
+          <a href="#contact-form">@lang('renters.services.item1')</a>
+        </li>
+        <li class="swiper-slide odd xl:!hidden" hidden>
+          <a href="#contact-form">@lang('renters.services.item2')</a>
+        </li>
+        <li class="swiper-slide xl:!hidden" hidden>
+          <a href="#contact-form">@lang('renters.services.item3')</a>
+        </li>
+        <li class="swiper-slide odd xl:!hidden" hidden>
+          <a href="#contact-form">@lang('renters.services.item4')</a>
+        </li>
+        <li class="swiper-slide xl:!hidden" hidden>
+          <a href="#contact-form">@lang('renters.services.item5')</a>
         </li>
       </ul>
     </div>
