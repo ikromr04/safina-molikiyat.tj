@@ -50,7 +50,7 @@
     </dl>
   </section>
 
-  <section class="services">
+  <section class="services" data-trigger-scrollbar>
     <h3 class="services__title title container">@lang('about.services.title')</h3>
 
     <ul class="services__list" data-shrinked onclick="window.toggleList(this)">

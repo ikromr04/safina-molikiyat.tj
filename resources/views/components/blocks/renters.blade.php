@@ -1,7 +1,7 @@
-<section class="renters" id="renters" data-trigger-header>
+<section class="renters" id="renters">
   <h2 class="sr-only">@lang('renters.title')</h2>
 
-  <section class="renters-business">
+  <section class="renters-business" data-trigger-header>
     <div class="relative z-10 container">
       <h3 class="renters-business__title title title--reverse">@lang('renters.business.title')</h3>
 

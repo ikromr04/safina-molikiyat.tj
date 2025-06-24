@@ -56,7 +56,7 @@
           </a>
         </li>
         <li>
-          <a class="nav__contact-link nav__contact-link--mail" href="#contact-form">
+          <a class="nav__contact-link nav__contact-link--mail" href="#contact-form" data-email>
             <svg class="nav__contact-icon nav__contact-icon--mail" width="16" height="10">
               <use href="#mail" />
             </svg>

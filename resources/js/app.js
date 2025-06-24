@@ -121,22 +121,26 @@ sliderEls?.forEach((sliderEl) => {
   });
 });
 
-// window.addEventListener('scroll', () => {
-//   const scrollFollow = document.querySelector('#scroll-follow');
-//   const percentView = document.querySelector('.scrolled-percent');
-//   const scrollTop = window.scrollY || document.documentElement.scrollTop;
-//   const scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-//   const percent = (scrollTop / scrollHeight) * 100;
+window.addEventListener('scroll', () => {
+  const scrollFollow = document.querySelector('[data-trigger-scrollbar]');
+  const percentView = document.querySelector('[data-scrolled]');
+  const toTopButton = document.querySelector('[data-to-top]');
+  const mailButton = document.querySelector('[data-email]');
+  const scrollTop = window.scrollY || document.documentElement.scrollTop;
+  const scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  const percent = (scrollTop / scrollHeight) * 100;
 
-//   const rect = scrollFollow.getBoundingClientRect();
-//   if (rect.top <= 0) {
-//     toTopButton.closest('ul').setAttribute('style', 'opacity:100;visibility:visible;')
-//   } else {
-//     toTopButton.closest('ul').removeAttribute('style')
-//   }
+  const rect = scrollFollow.getBoundingClientRect();
+  if (rect.top <= 0) {
+    toTopButton.setAttribute('style', 'opacity:100;visibility:visible;')
+    mailButton.setAttribute('style', 'opacity:100;visibility:visible;')
+  } else {
+    toTopButton.removeAttribute('style')
+    mailButton.removeAttribute('style')
+  }
 
-//   percentView.setAttribute('style', `width:${percent.toFixed(2)}%`);
-// });
+  percentView.setAttribute('style', `width:${percent.toFixed(2)}%`);
+});
 
 const headerEl = document.querySelector('[data-header]');
 const triggerHeaderStickyEl = document.querySelector('[data-trigger-header]');
