@@ -87,35 +87,35 @@
     <div class="swiper" data-swiper>
       <ul class="swiper-wrapper">
         <li class="swiper-slide odd">
-          <a href="#contact-form">@lang('renters.services.item1')</a>
+          <a href="#contact-form" data-contact-form data-me="{{ collect(__('form.contact.meOptions'))[0] }}" data-service="{{ __('renters.services.item1') }}">@lang('renters.services.item1')</a>
         </li>
         <li class="swiper-slide">
-          <a href="#contact-form">@lang('renters.services.item2')</a>
+          <a href="#contact-form" data-contact-form data-me="{{ collect(__('form.contact.meOptions'))[0] }}" data-service="{{ __('renters.services.item2') }}">@lang('renters.services.item2')</a>
         </li>
         <li class="swiper-slide odd">
-          <a href="#contact-form">@lang('renters.services.item3')</a>
+          <a href="#contact-form" data-contact-form data-me="{{ collect(__('form.contact.meOptions'))[0] }}" data-service="{{ __('renters.services.item3') }}">@lang('renters.services.item3')</a>
         </li>
         <li class="swiper-slide">
-          <a href="#contact-form">@lang('renters.services.item4')</a>
+          <a href="#contact-form" data-contact-form data-me="{{ collect(__('form.contact.meOptions'))[0] }}" data-service="{{ __('renters.services.item4') }}">@lang('renters.services.item4')</a>
         </li>
         <li class="swiper-slide odd">
-          <a href="#contact-form">@lang('renters.services.item5')</a>
+          <a href="#contact-form" data-contact-form data-me="{{ collect(__('form.contact.meOptions'))[0] }}" data-service="{{ __('renters.services.item5') }}">@lang('renters.services.item5')</a>
         </li>
 
         <li class="swiper-slide xl:!hidden" hidden>
-          <a href="#contact-form">@lang('renters.services.item1')</a>
+          <a href="#contact-form" data-contact-form data-me="{{ collect(__('form.contact.meOptions'))[0] }}" data-service="{{ __('renters.services.item1') }}">@lang('renters.services.item1')</a>
         </li>
         <li class="swiper-slide odd xl:!hidden" hidden>
-          <a href="#contact-form">@lang('renters.services.item2')</a>
+          <a href="#contact-form" data-contact-form data-me="{{ collect(__('form.contact.meOptions'))[0] }}" data-service="{{ __('renters.services.item2') }}">@lang('renters.services.item2')</a>
         </li>
         <li class="swiper-slide xl:!hidden" hidden>
-          <a href="#contact-form">@lang('renters.services.item3')</a>
+          <a href="#contact-form" data-contact-form data-me="{{ collect(__('form.contact.meOptions'))[0] }}" data-service="{{ __('renters.services.item3') }}">@lang('renters.services.item3')</a>
         </li>
         <li class="swiper-slide odd xl:!hidden" hidden>
-          <a href="#contact-form">@lang('renters.services.item4')</a>
+          <a href="#contact-form" data-contact-form data-me="{{ collect(__('form.contact.meOptions'))[0] }}" data-service="{{ __('renters.services.item4') }}">@lang('renters.services.item4')</a>
         </li>
         <li class="swiper-slide xl:!hidden" hidden>
-          <a href="#contact-form">@lang('renters.services.item5')</a>
+          <a href="#contact-form" data-contact-form data-me="{{ collect(__('form.contact.meOptions'))[0] }}" data-service="{{ __('renters.services.item5') }}">@lang('renters.services.item5')</a>
         </li>
       </ul>
     </div>

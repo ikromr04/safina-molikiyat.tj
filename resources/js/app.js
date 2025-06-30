@@ -222,17 +222,3 @@ function isCovering50PercentViewport(el) {
 
   return visibleHeight >= viewportHeight * 0.5;
 }
-
-const animEls = document.querySelectorAll('.smart-anim');
-
-animEls.forEach((element) => {
-  setInterval(() => {
-    if (element.classList.contains('smart-left')) {
-      element.classList.remove('smart-left')
-      element.classList.add('smart-right')
-    } else {
-      element.classList.add('smart-left')
-      element.classList.remove('smart-right')
-    }
-  }, 5000)
-});

@@ -11,7 +11,7 @@
     </div>
 
     <div class="about__bottom">
-      <a class="about__more" href="#contact-form">
+      <a class="about__more" href="#contact-form" data-contact-form>
         @lang('learnMore')
       </a>
 

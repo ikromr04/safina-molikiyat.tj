@@ -28,7 +28,10 @@
 
   <script src="https://unpkg.com/lottie-web@latest/build/player/lottie.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
   @vite('resources/js/app.js')
+  @viteReactRefresh
+  @vite('resources/js/forms.jsx')
 </body>
 
 </html>

@@ -5,7 +5,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::prefix(parseLocale())->group(function () {
   Route::get('/', [AppController::class, 'index']);
-  Route::get('/about', [AppController::class, 'index']);
+  Route::post('/contact', [AppController::class, 'contact'])->name('contact');
 });
 
 function parseLocale()

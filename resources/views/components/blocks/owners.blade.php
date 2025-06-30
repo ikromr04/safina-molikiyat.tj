@@ -28,7 +28,7 @@
         <a class="button" href="blank" target="_blank">@lang('owners.business.learnMore')</a>
       </li>
       <li>
-        <a class="button" href="#contact-form">@lang('owners.business.contact')</a>
+        <a class="button" href="#contact-form" data-contact-form data-me="{{ collect(__('form.contact.meOptions'))[1] }}">@lang('owners.business.contact')</a>
       </li>
     </ul>
   </section>
@@ -39,35 +39,35 @@
     <div class="swiper" data-swiper>
       <ul class="swiper-wrapper">
         <li class="swiper-slide odd">
-          <a href="#contact-form">@lang('owners.services.item1')</a>
+          <a href="#contact-form" data-contact-form data-me="{{ collect(__('form.contact.meOptions'))[1] }}" data-service="{{ __('owners.services.item1') }}">@lang('owners.services.item1')</a>
         </li>
         <li class="swiper-slide">
-          <a href="#contact-form">@lang('owners.services.item2')</a>
+          <a href="#contact-form" data-contact-form data-me="{{ collect(__('form.contact.meOptions'))[1] }}" data-service="{{ __('owners.services.item2') }}">@lang('owners.services.item2')</a>
         </li>
         <li class="swiper-slide odd">
-          <a href="#contact-form">@lang('owners.services.item3')</a>
+          <a href="#contact-form" data-contact-form data-me="{{ collect(__('form.contact.meOptions'))[1] }}" data-service="{{ __('owners.services.item3') }}">@lang('owners.services.item3')</a>
         </li>
         <li class="swiper-slide">
-          <a href="#contact-form">@lang('owners.services.item4')</a>
+          <a href="#contact-form" data-contact-form data-me="{{ collect(__('form.contact.meOptions'))[1] }}" data-service="{{ __('owners.services.item4') }}">@lang('owners.services.item4')</a>
         </li>
         <li class="swiper-slide odd">
-          <a href="#contact-form">@lang('owners.services.item5')</a>
+          <a href="#contact-form" data-contact-form data-me="{{ collect(__('form.contact.meOptions'))[1] }}" data-service="{{ __('owners.services.item5') }}">@lang('owners.services.item5')</a>
         </li>
 
-         <li class="swiper-slide xl:!hidden" hidden>
-          <a href="#contact-form">@lang('owners.services.item1')</a>
+        <li class="swiper-slide xl:!hidden" hidden>
+          <a href="#contact-form" data-contact-form data-me="{{ collect(__('form.contact.meOptions'))[1] }}" data-service="{{ __('owners.services.item1') }}">@lang('owners.services.item1')</a>
         </li>
         <li class="swiper-slide odd xl:!hidden" hidden>
-          <a href="#contact-form">@lang('owners.services.item2')</a>
+          <a href="#contact-form" data-contact-form data-me="{{ collect(__('form.contact.meOptions'))[1] }}" data-service="{{ __('owners.services.item2') }}">@lang('owners.services.item2')</a>
         </li>
         <li class="swiper-slide xl:!hidden" hidden>
-          <a href="#contact-form">@lang('owners.services.item3')</a>
+          <a href="#contact-form" data-contact-form data-me="{{ collect(__('form.contact.meOptions'))[1] }}" data-service="{{ __('owners.services.item3') }}">@lang('owners.services.item3')</a>
         </li>
         <li class="swiper-slide odd xl:!hidden" hidden>
-          <a href="#contact-form">@lang('owners.services.item4')</a>
+          <a href="#contact-form" data-contact-form data-me="{{ collect(__('form.contact.meOptions'))[1] }}" data-service="{{ __('owners.services.item4') }}">@lang('owners.services.item4')</a>
         </li>
         <li class="swiper-slide xl:!hidden" hidden>
-          <a href="#contact-form">@lang('owners.services.item5')</a>
+          <a href="#contact-form" data-contact-form data-me="{{ collect(__('form.contact.meOptions'))[1] }}" data-service="{{ __('owners.services.item5') }}">@lang('owners.services.item5')</a>
         </li>
       </ul>
     </div>

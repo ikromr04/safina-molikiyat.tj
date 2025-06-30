@@ -19,6 +19,38 @@ module.exports = {
         platinum: '#d9d9d9',
         onyx: '#1f2937',
       },
+      animation: {
+        rotation: 'rotation 1s linear infinite',
+        move: 'move 12s linear infinite',
+      },
+      keyframes: {
+        rotation: {
+          '0%': { transform: 'rotate(0deg)' },
+          '100%': { transform: 'rotate(360deg)' },
+        },
+        move: {
+          '0%': {
+            left: '0',
+            transform: 'translateX(-100%) translateY(-50%)'
+          },
+          '4%': {
+            left: '100%',
+            transform: 'translateX(100%) translateY(-50%)'
+          },
+          '50%': {
+            left: '100%',
+            transform: 'translateX(100%) translateY(-50%)'
+          },
+          '54%': {
+            left: '0',
+            transform: 'translateX(-100%) translateY(-50%)'
+          },
+          '100%': {
+            left: '0',
+            transform: 'translateX(-100%) translateY(-50%)'
+          },
+        },
+      },
     },
   },
   plugins: [],

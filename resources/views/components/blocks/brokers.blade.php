@@ -64,7 +64,7 @@
         <a class="button" href="blank" target="_blank">@lang('brokers.advantages.learnMore')</a>
       </li>
       <li>
-        <a class="button" href="#contact-form">@lang('brokers.advantages.contact')</a>
+        <a class="button" href="#contact-form" data-contact-form data-me="{{ collect(__('form.contact.meOptions'))[2] }}">@lang('brokers.advantages.contact')</a>
       </li>
     </ul>
   </section>
@@ -75,44 +75,44 @@
     <div class="swiper" data-swiper>
       <ul class="swiper-wrapper">
         <li class="swiper-slide odd">
-          <a href="#contact-form">@lang('brokers.projects.item1.title')</a>
+          <a href="#contact-form" data-contact-form data-me="{{ collect(__('form.contact.meOptions'))[2] }}" data-service="{{ __('brokers.projects.item1.title') }}">@lang('brokers.projects.item1.title')</a>
           <p>@lang('brokers.projects.item1.description')</p>
         </li>
         <li class="swiper-slide">
-          <a href="#contact-form">@lang('brokers.projects.item2.title')</a>
+          <a href="#contact-form" data-contact-form data-me="{{ collect(__('form.contact.meOptions'))[2] }}" data-service="{{ __('brokers.projects.item2.title') }}">@lang('brokers.projects.item2.title')</a>
           <p>@lang('brokers.projects.item2.description')</p>
         </li>
         <li class="swiper-slide odd">
-          <a href="#contact-form">@lang('brokers.projects.item3.title')</a>
+          <a href="#contact-form" data-contact-form data-me="{{ collect(__('form.contact.meOptions'))[2] }}" data-service="{{ __('brokers.projects.item3.title') }}">@lang('brokers.projects.item3.title')</a>
           <p>@lang('brokers.projects.item3.description')</p>
         </li>
         <li class="swiper-slide">
-          <a href="#contact-form">@lang('brokers.projects.item4.title')</a>
+          <a href="#contact-form" data-contact-form data-me="{{ collect(__('form.contact.meOptions'))[2] }}" data-service="{{ __('brokers.projects.item4.title') }}">@lang('brokers.projects.item4.title')</a>
           <p>@lang('brokers.projects.item4.description')</p>
         </li>
         <li class="swiper-slide odd">
-          <a href="#contact-form">@lang('brokers.projects.item5.title')</a>
+          <a href="#contact-form" data-contact-form data-me="{{ collect(__('form.contact.meOptions'))[2] }}" data-service="{{ __('brokers.projects.item5.title') }}">@lang('brokers.projects.item5.title')</a>
           <p>@lang('brokers.projects.item5.description')</p>
         </li>
 
         <li class="swiper-slide xl:!hidden" hidden>
-          <a href="#contact-form">@lang('brokers.projects.item1.title')</a>
+          <a href="#contact-form" data-contact-form data-me="{{ collect(__('form.contact.meOptions'))[2] }}" data-service="{{ __('brokers.projects.item1.title') }}">@lang('brokers.projects.item1.title')</a>
           <p>@lang('brokers.projects.item1.description')</p>
         </li>
         <li class="swiper-slide odd xl:!hidden" hidden>
-          <a href="#contact-form">@lang('brokers.projects.item2.title')</a>
+          <a href="#contact-form" data-contact-form data-me="{{ collect(__('form.contact.meOptions'))[2] }}" data-service="{{ __('brokers.projects.item2.title') }}">@lang('brokers.projects.item2.title')</a>
           <p>@lang('brokers.projects.item2.description')</p>
         </li>
         <li class="swiper-slide xl:!hidden" hidden>
-          <a href="#contact-form">@lang('brokers.projects.item3.title')</a>
+          <a href="#contact-form" data-contact-form data-me="{{ collect(__('form.contact.meOptions'))[2] }}" data-service="{{ __('brokers.projects.item3.title') }}">@lang('brokers.projects.item3.title')</a>
           <p>@lang('brokers.projects.item3.description')</p>
         </li>
         <li class="swiper-slide odd xl:!hidden" hidden>
-          <a href="#contact-form">@lang('brokers.projects.item4.title')</a>
+          <a href="#contact-form" data-contact-form data-me="{{ collect(__('form.contact.meOptions'))[2] }}" data-service="{{ __('brokers.projects.item4.title') }}">@lang('brokers.projects.item4.title')</a>
           <p>@lang('brokers.projects.item4.description')</p>
         </li>
         <li class="swiper-slide xl:!hidden" hidden>
-          <a href="#contact-form">@lang('brokers.projects.item5.title')</a>
+          <a href="#contact-form" data-contact-form data-me="{{ collect(__('form.contact.meOptions'))[2] }}" data-service="{{ __('brokers.projects.item5.title') }}">@lang('brokers.projects.item5.title')</a>
           <p>@lang('brokers.projects.item5.description')</p>
         </li>
       </ul>
