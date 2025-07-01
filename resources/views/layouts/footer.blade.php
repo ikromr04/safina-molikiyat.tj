@@ -26,7 +26,7 @@
       <ul class="footer__contact-list">
         <li>
           <a class="footer__contact-link" href="tel:@lang('nav.telCode'){{ str_replace(' ', '', __('nav.telNumbers')) }}">
-            <svg class="flex mr-[6px] xl:mr-2 xl:w-4 xl:h-4" width="16" height="16">
+            <svg class="flex w-auto h-[13px] xl:mr-2 xl:w-4 xl:h-4" width="16" height="16">
               <use href="#tel" />
             </svg>
             @lang('nav.telNumbers')
@@ -34,7 +34,7 @@
         </li>
         <li>
           <a class="footer__contact-address" href="https://yandex.tj/maps/10318/dushanbe/house/YkEYcQ5hSEIHQF1ifXl2eHtgZw==/?ll=68.791454%2C38.579576&z=18" target="_blank">
-            <svg width="16" height="16">
+            <svg class="block w-[13px] aspect-[14/19] xl:w-[14px] xl:h-[19px]" width="16" height="16">
               <use href="#gps" />
             </svg>
             @lang('nav.address')
