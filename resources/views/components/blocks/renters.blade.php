@@ -71,7 +71,34 @@
         </a>
       </li>
       <li>
-        <a class="button" href="#calculation-form">
+        @php
+          $text = (object) [
+              'title' => __('form.calc.title'),
+              'description' => __('form.calc.description'),
+              'field.name.label' => __('form.calc.field.name.label'),
+              'field.surname.label' => __('form.calc.field.surname.label'),
+              'field.tel.label' => __('form.calc.field.tel.label'),
+              'field.email.label' => __('form.calc.field.email.label'),
+              'field.name.required' => __('form.calc.field.name.required'),
+              'field.surname.required' => __('form.calc.field.surname.required'),
+              'field.tel.required' => __('form.calc.field.tel.required'),
+              'field.email.required' => __('form.calc.field.email.required'),
+              'field.email.email' => __('form.calc.field.email.email'),
+              'field.employees.label' => __('form.calc.field.employees.label'),
+              'field.areaPerEmployee.label' => __('form.calc.field.areaPerEmployee.label'),
+              'options' => (array) [__('form.calc.field.areaPerEmployee.option1'), __('form.calc.field.areaPerEmployee.option2'), __('form.calc.field.areaPerEmployee.option3')],
+              'field.rooms.label' => __('form.calc.field.rooms.label'),
+              'openspace' => __('form.calc.openspace'),
+              'recommended' => __('form.calc.recommend'),
+              'apply' => __('form.calc.apply'),
+              'apply.title' => __('form.calc.apply.title'),
+              'apply.description' => __('form.calc.apply.description'),
+              'submit' => __('form.calc.submit'),
+              'warning' => __('form.contact.warning'),
+              'noCabinets' => __('form.calc.noCabinets'),
+          ];
+        @endphp
+        <a class="button" href="#calculation-form" data-calculation="{{ json_encode($text) }}">
           <svg class="button__icon" width="16" height="16">
             <use href="#calculation" />
           </svg>

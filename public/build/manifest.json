@@ -1,0 +1,43 @@
+{
+  "public/fonts/SourceSansPro-Light.woff": {
+    "file": "assets/SourceSansPro-Light-CrHshPQm.woff",
+    "src": "public/fonts/SourceSansPro-Light.woff"
+  },
+  "public/fonts/SourceSansPro-Light.woff2": {
+    "file": "assets/SourceSansPro-Light-BNkbZRMY.woff2",
+    "src": "public/fonts/SourceSansPro-Light.woff2"
+  },
+  "public/fonts/SourceSansPro-Regular.woff": {
+    "file": "assets/SourceSansPro-Regular-x6Hy6nNt.woff",
+    "src": "public/fonts/SourceSansPro-Regular.woff"
+  },
+  "public/fonts/SourceSansPro-Regular.woff2": {
+    "file": "assets/SourceSansPro-Regular-DttFCsV7.woff2",
+    "src": "public/fonts/SourceSansPro-Regular.woff2"
+  },
+  "public/images/logo.svg": {
+    "file": "assets/logo-T2waNwZC.svg",
+    "src": "public/images/logo.svg"
+  },
+  "public/images/safina-molikiyat.svg": {
+    "file": "assets/safina-molikiyat-DeriPRmB.svg",
+    "src": "public/images/safina-molikiyat.svg"
+  },
+  "resources/css/app.css": {
+    "file": "assets/app-SlLDU9N6.css",
+    "src": "resources/css/app.css",
+    "isEntry": true
+  },
+  "resources/js/app.js": {
+    "file": "assets/app-UZ63cN-4.js",
+    "name": "app",
+    "src": "resources/js/app.js",
+    "isEntry": true
+  },
+  "resources/js/forms.jsx": {
+    "file": "assets/forms-DoChr0bD.js",
+    "name": "forms",
+    "src": "resources/js/forms.jsx",
+    "isEntry": true
+  }
+}

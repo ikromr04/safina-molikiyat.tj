@@ -113,5 +113,38 @@
   "form.contact.submit": "Submit",
   "form.contact.warning": "By clicking “Submit”, you consent to the processing of personal data and agree to the <a class=\"text-inherit\" href=\"blank\" target=\"_blank\">privacy policy</a>",
   "form.contact.close": "Close",
-  "toTop": "To top"
+  "toTop": "To top",
+  "form.calc.title": "Office space calculation",
+  "form.calc.description": "Fill in all the required fields below and we will find an office of the necessary size for you.",
+  "form.calc.field.name.label": "First name",
+  "form.calc.field.surname.label": "Last name",
+  "form.calc.field.tel.label": "Phone",
+  "form.calc.field.email.label": "Email",
+  "form.calc.field.employees.label": "Number of employees",
+  "form.calc.field.areaPerEmployee.label": "Square meters per employee",
+  "form.calc.field.areaPerEmployee.option1": {
+    "value": 7.5,
+    "label": "7.5 sq.m – dense"
+  },
+  "form.calc.field.areaPerEmployee.option2": {
+    "value": 10,
+    "label": "10 sq.m – spacious"
+  },
+  "form.calc.field.areaPerEmployee.option3": {
+    "value": 14,
+    "label": "14 sq.m – very spacious"
+  },
+  "form.calc.field.rooms.label": "Cabinets",
+  "form.calc.openspace": "Open space for 1 person",
+  "form.calc.apply": "Apply now",
+  "form.calc.apply.title": "Leave your phone and email",
+  "form.calc.apply.description": "We will make a free seating plan for your team and provide a selection of suitable properties with prices and terms.",
+  "form.calc.submit": "Submit",
+  "form.calc.field.name.required": "Required field.",
+  "form.calc.field.surname.required": "Required field.",
+  "form.calc.field.tel.required": "Required field.",
+  "form.calc.field.email.required": "Required field.",
+  "form.calc.field.email.email": "Invalid email address.",
+  "form.calc.recommend": "Recommended area",
+  "form.calc.noCabinets": "❌ Not enough suitable offices available."
 }

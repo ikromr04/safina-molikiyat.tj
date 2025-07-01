@@ -3,8 +3,6 @@ import { Form, Formik } from "formik";
 import { useEffect, useState } from "react";
 import * as Yup from 'yup';
 
-
-
 function ContactForm({ text }) {
   const [initialValues, setInitialValues] = useState();
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -105,7 +103,9 @@ function ContactForm({ text }) {
 
     setTimeout(() => {
       setInitialValues(undefined);
-    },3000);
+      setSucceeded(false);
+      setIsSubmitting(false);
+    }, 3000);
   };
 
   if (!initialValues) return null;
@@ -119,7 +119,7 @@ function ContactForm({ text }) {
       >
         {({ values, setFieldValue, errors, touched }) => (
           <Form className="form container">
-            <h2 className="form__title">{text.title}</h2>
+            <h2 className="form__title px-4">{text.title}</h2>
 
             <input className={classNames('text-field mb-2', errors.name && touched.name && '!border-red-400')} name="name" type="text" placeholder={text.placeholder.name} aria-label={text.name} value={values.name} onChange={(evt) => setFieldValue('name', evt.target.value)} />
             {errors.name && touched.name && (
@@ -242,7 +242,7 @@ function ContactForm({ text }) {
               )}
             </button>
 
-            <p className="text-xs leading-none m-0 font-light" dangerouslySetInnerHTML={{ __html: text.warning }}></p>
+            <p className="text-xs leading-none m-0 px-4 font-light" dangerouslySetInnerHTML={{ __html: text.warning }}></p>
 
             <button className="modal__close" type="button" onClick={() => setInitialValues(undefined)}>
               <span className="sr-only">{text.close}</span>

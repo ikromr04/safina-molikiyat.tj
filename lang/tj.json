@@ -113,5 +113,38 @@
   "form.contact.submit": "Ирсол",
   "form.contact.warning": "Бо пахш кардани «Ирсол», шумо розӣ мешавед ба коркарди маълумоти шахсӣ ва розӣ ҳастед бо <a class=\"text-inherit\" href=\"blank\" target=\"_blank\">сиёсати махфият</a>",
   "form.contact.close": "Пинҳон кардан",
-  "toTop": "Ба боло"
+  "toTop": "Ба боло",
+  "form.calc.title": "Ҳисоб кардани масоҳати офис",
+  "form.calc.description": "Ҳамаи майдонҳои заруриро дар шакл пур кунед ва мо барои шумо офис бо масоҳати лозимиро пешниҳод мекунем.",
+  "form.calc.field.name.label": "Ном",
+  "form.calc.field.surname.label": "Насаб",
+  "form.calc.field.tel.label": "Телефон",
+  "form.calc.field.email.label": "Почтаи электронӣ",
+  "form.calc.field.employees.label": "Миқдори кормандон",
+  "form.calc.field.areaPerEmployee.label": "Масоҳати кв.м ба як корманд",
+  "form.calc.field.areaPerEmployee.option1": {
+    "value": 7.5,
+    "label": "7.5 кв.м – зич"
+  },
+  "form.calc.field.areaPerEmployee.option2": {
+    "value": 10,
+    "label": "10 кв.м – васеъ"
+  },
+  "form.calc.field.areaPerEmployee.option3": {
+    "value": 14,
+    "label": "14 кв.м – хеле васеъ"
+  },
+  "form.calc.field.rooms.label": "Ҳуҷраҳо",
+  "form.calc.openspace": "Опен спейс барои 1 нафар",
+  "form.calc.apply": "Ариза гузоштан",
+  "form.calc.apply.title": "Телефон ва почтаи худро гузоред",
+  "form.calc.apply.description": "Мо нақшаи ройгони ҷойгиркунии кормандон ва интихоботи актуалии объектҳо бо нарх ва шартҳоро омода мекунем.",
+  "form.calc.submit": "Фиристодан",
+  "form.calc.field.name.required": "Ҳатми.",
+  "form.calc.field.surname.required": "Ҳатми.",
+  "form.calc.field.tel.required": "Ҳатми.",
+  "form.calc.field.email.required": "Ҳатми.",
+  "form.calc.field.email.email": "Суроғаи почтаи электронӣ нодуруст аст.",
+  "form.calc.recommend": "Сатхи тавсияшаванда",
+  "form.calc.noCabinets": "❌ Утоқҳои мувофиқ кофӣ нестанд."
 }

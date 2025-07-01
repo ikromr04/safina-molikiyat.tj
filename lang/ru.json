@@ -113,5 +113,38 @@
   "form.contact.submit": "Отправить",
   "form.contact.warning": "Нажимая на кнопку «Отправить», вы даете <a class=\"text-inherit\" href=\"blank\" target=\"_blank\">согласие на обработку</a> персональных данных и соглашаетесь c <a class=\"text-inherit\" href=\"blank\" target=\"_blank\">политикой конфиденциальности</a>",
   "form.contact.close": "Скрыть",
-  "toTop": "Наверх"
+  "toTop": "Наверх",
+  "form.calc.title": "Расчет метража офиса",
+  "form.calc.description": "Заполните все необходимые поля в форме ниже и мы подберем для вас офис необходимой площади",
+  "form.calc.field.name.label": "Имя",
+  "form.calc.field.surname.label": "Фамилия",
+  "form.calc.field.tel.label": "Телефон",
+  "form.calc.field.email.label": "Электронная почта",
+  "form.calc.field.employees.label": "Количество сотрудников",
+  "form.calc.field.areaPerEmployee.label": "Площадь кв.м. на одного сотрудника",
+  "form.calc.field.areaPerEmployee.option1": {
+    "value": 7.5,
+    "label": "7.5 кв. м – плотная"
+  },
+  "form.calc.field.areaPerEmployee.option2": {
+    "value": 10,
+    "label": "10 кв. м – свободная"
+  },
+  "form.calc.field.areaPerEmployee.option3": {
+    "value": 14,
+    "label": "14 кв. м – просторная"
+  },
+  "form.calc.field.rooms.label": "Кабинеты",
+  "form.calc.openspace": "Опен спейс на 1 чел.",
+  "form.calc.apply": "Оставить заявку",
+  "form.calc.apply.title": "Оставьте ваш телефон и почту",
+  "form.calc.apply.description": "Мы сделаем бесплатный план рассадки персонала и актуальную подборку подходящих объектов с ценами и условиями",
+  "form.calc.submit": "Отправить",
+  "form.calc.field.name.required": "Обязательное поле.",
+  "form.calc.field.surname.required": "Обязательное поле.",
+  "form.calc.field.tel.required": "Обязательное поле.",
+  "form.calc.field.email.required": "Обязательное поле.",
+  "form.calc.field.email.email": "Неверный адрес электронной почты.",
+  "form.calc.recommend": "Рекомендуемая площадь",
+  "form.calc.noCabinets": "❌ Недостаточно подходящих кабинетов."
 }
