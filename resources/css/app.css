@@ -1192,7 +1192,7 @@
 .footer__contact-link {
   @apply relative hidden ml-auto text-inherit no-underline items-center h-7 rounded px-[calc(10px+4*((100vw-768px)/512))] font-light;
   @apply md:flex md:gap-2 md:text-[clamp(16px,calc(16px+4*((100vw-768px)/(1280-768))),20px)] md:h-8;
-  @apply xl:font-normal xl:h-9 xl:px-3;
+  @apply xl:font-normal xl:h-9 xl:px-4;
 
   &::after {
     content: "";
