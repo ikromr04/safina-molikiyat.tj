@@ -403,7 +403,7 @@
   }
 
   &.nav__contact-link--tel {
-    @apply md:justify-center md:items-center md:gap-x-2 md:h-7 md:px-[calc(10px+4*((100vw-768px)/512))] md:py-0 md:font-light md:leading-none md:text-[min(calc(16px+4*((100vw-768px)/512)),20px)] md:no-underline;
+    @apply md:justify-center md:items-center md:gap-x-2 md:h-7 md:px-[min(calc(10px+4*((100vw-768px)/512)),16px)] md:py-0 md:font-light md:leading-none md:text-[min(calc(16px+4*((100vw-768px)/512)),20px)] md:no-underline;
     @apply xl:h-9 xl:font-normal;
 
     &::after {
